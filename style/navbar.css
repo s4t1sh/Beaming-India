@@ -1,0 +1,71 @@
+:root {
+    --primary-color: #000080;
+    --secondary-color: #FEC10F;
+    --black : #202020;
+  }
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    padding: 14px 23px;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+    border-radius: 44px;
+    background: rgba(255, 255, 255, 0.10);
+}
+
+.menu-items{
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.14px;
+}
+
+.book-btn {
+    color: var(--primary-color);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.14px;
+    display: flex;
+    width: 218px;
+    height: 48px;
+    padding: 10px 23px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+    border-radius: 49px;
+    background: linear-gradient(to right, var(--secondary-color) 50%, white 50%);
+    background-size: 200% 200%;
+    transition: background-position 300ms ease-in-out, color 300ms ease-in-out, transform 300ms ease-in-out;
+    border: 3px solid var(--secondary-color);
+    box-shadow: 0px 2px 57.6px 0px rgba(246, 245, 244, 0.7);
+}
+
+.book-btn:hover {
+    background-position: 100% 100%;
+    color: var(--primary-color);
+    box-shadow: 0 0 50px 5px rgba(254, 193, 15, 0.70);
+    transform: translate(5px,0px);
+}
+
+.navbar li{
+    border-radius: 25px;
+    padding: 7px 23px;
+    cursor: pointer;
+    transition: all 400ms ease-in-out;
+}
+
+.active, .navbar li:hover{
+    border-radius: 25px;
+    background: #FFF;
+    color: var(--black);
+}
