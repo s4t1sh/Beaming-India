@@ -58,7 +58,7 @@
     gap: 31px;
 }
 
-.title-section p{
+.title-section p,.heading{
     color: #000080;
     font-size: 47.06px;
     font-style: normal;
@@ -81,4 +81,26 @@
     font-weight: 400;
     line-height: 27px; /* 180% */
     letter-spacing: 0.45px;
+    width: 78%;
+}
+
+@media (max-width: 768px){
+    .about-section-desc{
+        width: 100%;
+    }
+}
+
+.services-section{
+    border-radius: 36px;
+    background: #F6F6F6;
+    padding: 56px 105px 99.018px 105px;
+}
+
+.head-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+    align-self: stretch;
 }
