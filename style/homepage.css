@@ -1,8 +1,18 @@
 .title-btn{
     padding: 10px 12px;
     border-radius: 37px;
-    background: var(--secondary-color);
     box-shadow: 0px 2px 57.6px 0px rgba(254, 193, 15, 0.70);
+    background: linear-gradient(to right, var(--secondary-color) 50%, white 50%);
+    background-size: 200% 200%;
+    transition: background-position 300ms ease-in-out, color 300ms ease-in-out, transform 300ms ease-in-out;
+    border: 3px solid var(--secondary-color);
+}
+
+.title-btn:hover {
+    background-position: 100% 100%;
+    color: var(--primary-color);
+    box-shadow: 0 0 50px 5px rgba(254, 193, 15, 0.70);
+    transform: translate(5px,0px);
 }
 
 .grid-section{
@@ -103,4 +113,70 @@
     align-items: center;
     gap: 23px;
     align-self: stretch;
+}
+
+.offers-section{
+    border-radius: 16.51px;
+    border: 0.917px solid #E0DBDB;
+    background: white;
+    padding: 1.5rem 1.5rem;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.offers-section:hover{
+    transform: translate(0,-15px);
+}
+
+.offer-icon{
+    width: 29.351px;
+    height: 30.268px;
+}
+
+.offer-heading{
+    color: #000080;
+    font-size: 19.682px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 34.855px;
+}
+
+.offer-desc{
+    color: #8E8E8E;
+    font-size: 13.758px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24.765px;
+    letter-spacing: 0.413px;
+    margin-top: 1rem;
+}
+
+.product-design-img1{
+    width: 220.823px;
+    height: 222.886px;
+}
+
+.product-design-img2{
+    width: 330.201px;
+    height: 286.175px;
+    border-radius: 15.593px;
+    border-right: 0.917px solid #F2DDDD;
+    border-top: 0.917px solid #F2DDDD;
+}
+
+.prototyping-img1
+{
+    width: 141.253px;
+    height: 67.875px;
+    flex-shrink: 0;
+    border-radius: 9.172px;
+    border: 0.917px solid #F2DDDD;
+}
+
+.prototyping-img2{
+    width: 220.134px;
+    height: 110.067px;
+    flex-shrink: 0;
+    border-radius: 9.172px;
+    border: 0.917px solid #F2DDDD;
 }
