@@ -359,18 +359,19 @@
 
     <div class="text-center mt-16">
       <div class="tech-title">
-        <span>Web Platform</span>
-        <span>Database</span>
-        <span>Cloud & Devops</span>
-        <span>Mobile Apps</span>
+        <span id="webBtn" onclick="toggleTech('webplatform')">Web Platform</span>
+        <span id="databaseBtn" onclick="toggleTech('database')">Database</span>
+        <span id="cloudBtn" onclick="toggleTech('cloud')">Cloud & Devops</span>
+        <span id="mobileAppBtn" onclick="toggleTech('mobileapps')">Mobile Apps</span>
       </div>
       <div class=" h-1 mt-4" style="background: rgba(230, 230, 230, 0.10);"></div>
     </div>
 
-    <div class="webplatform mt-12 md:px-[12rem] px-12 pb-24">
+    <!-- webplatform starts -->
+    <div class="webplatform mt-12 md:px-[12rem] px-12 pb-24" id="webplatform">
       <div>
         <span>Front End</span>
-        <span class="ps-6">33 Developers</span>
+        <!-- <span class="ps-6">33 Developers</span> -->
       </div>
 
       <div class="grid grid-rows-4 md:grid-rows-2 grid-flow-col gap-8">
@@ -410,7 +411,7 @@
 
       <div class="mt-8">
         <span>Backend End</span>
-        <span class="ps-6">33 Developers</span>
+        <!-- <span class="ps-6">33 Developers</span> -->
       </div>
 
       <div class="grid grid-rows-4 md:grid-rows-2 grid-flow-col gap-8">
@@ -444,6 +445,44 @@
         </div>
       </div>
     </div>
+    <!-- webplatform ends -->
+
+    <!-- database starts -->
+    <div class="database mt-12 md:px-[12rem] px-12 pb-24" id="database">
+      <div>
+        <span>DATABASE</span>
+        <!-- <span class="ps-6">33 Developers</span> -->
+      </div>
+
+      <div class="grid grid-rows-4 md:grid-cols-4 gap-8">
+        <div class="graphql tech-border">
+          <img src="assets/images/homepage/databse-icons/Aws-rds.svg" alt="">
+          <span>[AWS RDS]</span>
+        </div>
+        <div class="react-hook tech-border">
+          <img src="assets/images/homepage/databse-icons/mongodb.svg" alt="">
+          <span>[MYSQL]</span>
+        </div>
+        <div class="graphql tech-border">
+          <img src="assets/images/homepage/databse-icons/mongodb.svg" alt="">
+          <span>[MONGO DB]</span>
+        </div>
+        <div class="graphql tech-border">
+          <img src="assets/images/homepage/databse-icons/postgresql.svg" alt="">
+          <span>[POSTGRESQL]</span>
+        </div>
+        <div class="apollo tech-border">
+          <img src="assets/images/homepage/databse-icons/radis.svg" alt="">
+          <span>[REDIS]</span>
+        </div>
+        <div class="graphql tech-border">
+          <img src="assets/images/homepage/databse-icons/elastic.svg" alt="">
+          <span>[ELASTIC SEARCH]</span>
+        </div>
+      </div>
+    </div>
+    <!-- database ends -->
+    
     <!-- scope of work ends -->
 
     <!-- Insights starts -->
@@ -470,7 +509,7 @@
           </div>
 
           <div class="card shadow-xl">
-            <div class="overflow-hidden"><img src="assets/images/homepage/insights.png" alt=""></div>
+            <div class="overflow-hidden"><img src="assets/images/homepage/blog2.png" alt=""></div>
             <div class="md:px-7 md:py-6">
               <p class="date">August 5, 2023</p>
               <p class="mt-2 card-desc">Navigating the Digital Frontier: How Our IT Company Empowers Businesses for the Future</p>
@@ -478,7 +517,7 @@
           </div>
 
           <div class="card shadow-xl">
-            <div class="overflow-hidden"><img src="assets/images/homepage/insights.png" alt=""></div>
+            <div class="overflow-hidden"><img src="assets/images/homepage/blog3.png" alt=""></div>
             <div class="md:px-7 md:py-6">
               <p class="date">August 5, 2023</p>
               <p class="mt-2 card-desc">Navigating the Digital Frontier: How Our IT Company Empowers Businesses for the Future</p>
@@ -497,5 +536,120 @@
     </div>
     <!-- Insights ends -->
 
+    <!-- clients section starts -->
+    <div class="clients">
+      <div>
+        <img src="assets/images/clients/bharat-jodo.svg" alt="">
+        <img src="assets/images/clients/Axis-direct.svg" alt="">
+        <img src="assets/images/clients/aggust-silver-moon.svg" alt="">
+        <img src="assets/images/clients/CG-gov.svg" alt="">
+        <img src="assets/images/clients/gseava.svg" alt="">
+        <img src="assets/images/clients/pokersaint.svg" alt="">
+        <img src="assets/images/clients/tescon-green.svg" alt="">
+        <img src="assets/images/clients/theschon.svg" alt="">
+        <img src="assets/images/clients/tvs.svg" alt="">
+      </div>
+    </div>
+    <!-- clients section ends -->
+
+
+    <!-- footer starts -->
+    <footer class="md:grid md:grid-cols-4 md:gap-24 md:pt-16 md:ps-24">
+      <div>
+        <p>Industries</p>
+        <p class="mt-4">Consumer Goods and Distribution</p>
+        <p>Communications, Media, and Information Services</p>
+        <p>Education</p>
+        <p>Energy, Resources, and Utilities</p>
+        <p>Healthcare</p>
+        <p>High Tech</p>
+        <p>Insurance</p>
+        <p>Life Sciences</p>
+        <p>Manufacturing</p>
+        <p>Public Services</p>
+        <p>Retail</p>
+        <p>Travel and Logistics</p>
+      </div>
+      <div>
+        <p>Services</p>
+        <p class="mt-4">Cloud</p>
+        <p>Cognitive Business Operations</p>
+        <p>Consulting</p>
+        <p>Cybersecurity</p>
+        <p>Data and Analytics</p>
+        <p>Enterprise Solutions</p>
+        <p>IoT and Digital Engineering</p>
+        <p>Sustainability Services</p>
+      </div>
+      <div class="grid grid-rows-2">
+        <div>
+          <p>Quick Links</p>
+          <p class="mt-4"><a href="#">Home</a></p>
+          <p><a href="#">About Us</a></p>
+          <p><a href="#">Our Projects</a></p>
+          <p><a href="#">Disclaimer</a></p>
+          <p><a href="#">Privacy Policy</a></p>
+        </div>
+
+        <div>
+          <p>Follow us on:</p>
+          <p class="mt-4"><a href="#">Instagram</a></p>
+          <p><a href="#">Facebook</a></p>
+          <p><a href="#">Twitter</a></p>
+          <p><a href="#">Linkedin</a></p>
+        </div>
+        
+      </div>
+      <div>
+        <p>Insights</p>
+        <p class="mt-4">Customer Stories</p>
+        <p>Cloud</p>
+        <p>Blockchain</p>
+        <p>IoT</p>
+        <p>Metaverse</p>
+        <p>Future of Work</p>
+        <p>Health and Wellness</p>
+        <p>Sustainability</p>
+        <p>AI and ML</p>
+        <p>Cybersecurity</p>
+        <p>Perspectives</p>
+      </div>
+    </footer>
+
+    <footer class="md:grid md:grid-cols-3 md:gap-24 md:ps-24 my-8">
+      <div>
+        <img src="assets/images/logo/logo.png" alt="" width="275">
+      </div>
+      <div>
+        <span class="address"><span style="color: var(--secondary-color); font-weight: 700;">Head Office :</span> #268/1, 2nd Floor,Matheshwari Building,
+          Begaur Main Road,Bommanahalli-560068</span>
+      </div>
+      <div>
+        <span class="address"><span style="color: var(--secondary-color); font-weight: 700;">Raipur Office :</span> Block B-312, Babylon Tower
+          Jivan Vihar, Raipur, Chhattisgarh 492001</span>
+      </div>
+    </footer>
+    <!-- footer ends -->
+
+    <script>
+      function toggleTech(section) {
+        const webPlatformSection = document.getElementById('webplatform');
+        const databaseSection = document.getElementById('database');
+        const webPlatformBtn = document.getElementById('webBtn');
+        const databaseBtn = document.getElementById('databaseBtn');
+    
+        if (section === 'webplatform') {
+          webPlatformSection.style.display = 'flex';
+          databaseSection.style.display = 'none';
+          webPlatformBtn.style.color = 'var(--secondary-color)';  
+          databaseBtn.style.color = 'white';
+        } else if (section === 'database') {
+          webPlatformSection.style.display = 'none';
+          databaseSection.style.display = 'flex';
+          webPlatformBtn.style.color = 'white'; 
+          databaseBtn.style.color = 'var(--secondary-color)';     
+        }
+      }
+    </script>
   </body>
 </html>
