@@ -33,6 +33,7 @@
     <style>
       body {
         background-color: var(--primary-color);
+        overflow-x: hidden;
       }
     </style>
   </head>
@@ -40,18 +41,16 @@
     <!-- navbar starts -->
 
     <nav
-      class="w-full flex justify-between px-[99px] py-[25px] items-center text-white"
+      class="w-full flex lg:justify-between lg:px-[99px] lg:py-[25px] lg:items-center text-white"
     >
       <div>
         <img
           src="assets/images/logo/logo.png"
           alt=""
-          width="200"
-          height="60"
-          class="cursor-pointer"
+          class="cursor-pointer logo-img"
         />
       </div>
-      <div class="hidden md:block">
+      <div class="hidden lg:block">
         <ul class="navbar menu-items">
           <li class="active"><a href="#">Features</a></li>
           <li><a href="#">Insights</a></li>
@@ -61,7 +60,7 @@
           <li><a href="#">Contact</a></li>
         </ul>
       </div>
-      <div class="hidden md:block">
+      <div class="hidden lg:block">
         <button class="book-btn">
           <span>Book A Call-Free</span>
           <img src="assets/images/logo/arrow.svg" alt="" />
@@ -72,7 +71,7 @@
     <!-- navbar ends -->
 
     <!-- grid section starts -->
-    <div class="grid-section py-20">
+    <div class="grid-section lg:py-20 py-10">
       <div class="feature-section mx-auto">
         <button class="title-btn">Features</button>
         <p>Powerful Features for Stunning <span>Websites</span></p>
@@ -96,22 +95,22 @@
 
     <div class="about-section">
         <!-- about us section starts -->
-      <div class="md:pb-20">
-        <div class="title-section ps-10 md:ps-16 pt-14 pb-8">
+      <div class="lg:pb-20">
+        <div class="title-section ps-4 lg:ps-16 lg:pt-14 pt-8 pb-8">
           <button class="title-btn">About Us</button>
           <p>
-            Why should you <br />
+            Why should you <br/>
             Hope with us?
           </p>
         </div>
 
-        <div class="md:grid md:grid-cols-3 md:gap-4">
+        <div class="lg:grid lg:grid-cols-3 lg:gap-4 mb-8 lg:mb-0">
           <div>
-            <img src="assets/images/homepage/office.png" alt="" class="scale-110"/>
+            <img src="assets/images/homepage/office.png" alt="" class="lg:scale-110"/>
           </div>
-          <div class="md:col-span-2 md:ps-20 md:pe-[10rem]">
-            <div class="grid grid-rows-2 grid-flow-col gap-0 mt-8 md:mt-0">
-              <div class="md:ps-8 border-r-2 border-r-[#E3E3E3]">
+          <div class="lg:col-span-2 lg:ps-20 lg:pe-[10rem]">
+            <div class="grid grid-rows-2 grid-flow-col gap-0 mt-8 lg:mt-0">
+              <div class="lg:ps-8 ps-4 border-r-2 border-r-[#E3E3E3]">
                 <img src="assets/images/homepage/🤜 🤛.png" alt="" />
                 <p class="about-section-headlines mt-2">Seamless Integration</p>
                 <p class="about-section-desc mt-1">
@@ -120,7 +119,7 @@
                 </p>
               </div>
               <div
-                class="md:ps-8 md:pt-8 border-r-2 border-r-[#E3E3E3] border-t-2 border-t-[#E3E3E3]"
+                class="lg:ps-8 pt-4 ps-4 lg:pt-8 border-r-2 border-r-[#E3E3E3] border-t-2 border-t-[#E3E3E3]"
               >
                 <img src="assets/images/homepage/🎯.png" alt="" />
                 <p class="about-section-headlines mt-2">Expert Design</p>
@@ -129,7 +128,7 @@
                   specialize in enhancing user engagement and product appeal.
                 </p>
               </div>
-              <div class="md:ps-16">
+              <div class="lg:ps-16 ps-4">
                 <img src="assets/images/homepage/🚀️.png" alt="" />
                 <p class="about-section-headlines mt-2">Speed to Market</p>
                 <p class="about-section-desc mt-1">
@@ -137,7 +136,7 @@
                   our efficient design solutions.
                 </p>
               </div>
-              <div class="md:ps-16 md:pt-8 border-t-2 border-t-[#E3E3E3]">
+              <div class="lg:ps-16 pt-4 ps-4 lg:pt-8 border-t-2 border-t-[#E3E3E3]">
                 <img src="assets/images/homepage/🦾.png" alt="" />
                 <p class="about-section-headlines mt-2">Affordable Excellence</p>
                 <p class="about-section-desc mt-1">
@@ -164,14 +163,14 @@
               </p>
           </div>
 
-          <div class="grid md:grid-cols-2 gap-8 mt-12 ">
+          <div class="grid lg:grid-cols-2 gap-8 mt-12 ">
             <div class="offers-section drop-shadow-lg">
               <div class="flex gap-2">
                 <img src="assets/images/homepage/icon-park-outline_web-page.svg" alt="" class="offer-icon">
                 <span class="offer-heading">Product Design.</span>
               </div>
               <p class="offer-desc">We help plan, conceptualise, design and execute stunning, scalable user interfaces and experiences for SaaS, web and native apps.</p>
-              <div class="flex mt-8 ps-3">
+              <div class="flex lg:mt-8 mt-4 lg:ps-3">
                 <img src="assets/images/homepage/product-design1.png" alt="" class="product-design-img1 mt-8">
                 <img src="assets/images/homepage/product-design2.png" alt="" class="product-design-img2">
               </div>
@@ -187,16 +186,16 @@
             </div>
           </div>
 
-          <div class="grid md:grid-cols-3 gap-10 mt-12 ">
+          <div class="grid lg:grid-cols-3 gap-10 mt-12 ">
             <div class="offers-section drop-shadow-lg">
               <div class="flex gap-2">
                 <img src="assets/images/homepage/Group.svg" alt="" class="offer-icon">
                 <span class="offer-heading">Prototyping.</span>
               </div>
               <p class="offer-desc">Bring your ideas to life with high-fidelity prototyping powered by conditional logic.</p>
-              <div class="flex pt-8 flex-col relative ps-4">
-                <img src="assets/images/homepage/prototyping1.png" alt="" class="prototyping-img1 ms-40">
-                <img src="assets/images/homepage/prototyping2.png" alt="" class="prototyping-img2 absolute top-[82%] z-[-1]">
+              <div class="flex pt-8 flex-col relative lg:ps-4 ">
+                <img src="assets/images/homepage/prototyping1.png" alt="" class="prototyping-img1 ms-40 ">
+                <img src="assets/images/homepage/prototyping2.png" alt="" class="prototyping-img2 absolute lg:top-[82%] z-[-1]  top-[23%]">
               </div>
             </div>
 
@@ -219,7 +218,7 @@
             </div>
           </div>
 
-          <div class="grid md:grid-cols-3 gap-10 mt-12 ">
+          <div class="grid lg:grid-cols-3 gap-10 mt-12 ">
             <div class="offers-section drop-shadow-lg">
               <div class="flex gap-2">
                 <img src="assets/images/homepage/tdesign_code.svg" alt="" class="offer-icon">
@@ -246,7 +245,7 @@
             </div>
           </div>
 
-          <div class="grid md:grid-cols-3 gap-10 mt-12 ">
+          <div class="grid lg:grid-cols-3 gap-10 mt-12 ">
             <div class="offers-section drop-shadow-lg">
               <div class="flex gap-2">
                 <img src="assets/images/homepage/tdesign_code.svg" alt="" class="offer-icon">
@@ -290,7 +289,7 @@
         <button>Web Development</button>
       </div>
 
-      <div class="grid md:grid-cols-2 gap-8 mt-16">
+      <div class="grid lg:grid-cols-2 gap-8 mt-16">
         <div >
           <div class="overflow-hidden relative border-raidus-15 shadow-xl">
             <img src="assets/images/homepage/work1.png" alt="" class="project-img">
@@ -319,7 +318,7 @@
         </div>
       </div>
 
-      <div class="grid md:grid-cols-2 gap-8 mt-14">
+      <div class="grid lg:grid-cols-2 gap-8 mt-14">
         <div>
           <div class="overflow-hidden relative border-raidus-15 shadow-xl">
             <img src="assets/images/homepage/work2.png" alt="" class="project-img">
@@ -368,13 +367,13 @@
     </div>
 
     <!-- webplatform starts -->
-    <div class="webplatform mt-12 md:px-[12rem] px-12 pb-24" id="webplatform">
+    <div class="webplatform mt-12 lg:px-[12rem] px-4 pb-24" id="webplatform">
       <div>
         <span>Front End</span>
         <!-- <span class="ps-6">33 Developers</span> -->
       </div>
 
-      <div class="grid grid-rows-4 md:grid-rows-2 grid-flow-col gap-8">
+      <div class="lg:grid lg:grid-rows-2 lg:grid-flow-col lg:gap-8 techbox">
         <div class="graphql tech-border">
           <img src="assets/images/homepage/webplatform-icons/graphql.svg" alt="">
           <span>[GRAPH QL]</span>
@@ -414,7 +413,7 @@
         <!-- <span class="ps-6">33 Developers</span> -->
       </div>
 
-      <div class="grid grid-rows-4 md:grid-rows-2 grid-flow-col gap-8">
+      <div class="lg:grid  lg:grid-rows-2 lg:grid-flow-col lg:gap-8 techbox">
         <div class="backend tech-border">
           <img src="assets/images/homepage/webplatform-icons/spring.svg" alt="">
           <span>[SPRING]</span>
@@ -448,13 +447,13 @@
     <!-- webplatform ends -->
 
     <!-- database starts -->
-    <div class="database mt-12 md:px-[12rem] px-12 pb-24" id="database">
+    <div class="database mt-12 lg:px-[12rem] px-4 pb-24" id="database">
       <div>
         <span>DATABASE</span>
         <!-- <span class="ps-6">33 Developers</span> -->
       </div>
 
-      <div class="grid grid-rows-4 md:grid-cols-4 gap-8">
+      <div class="lg:grid lg:grid-rows-4 lg:grid-cols-4 lg:gap-8 techbox">
         <div class="graphql tech-border">
           <img src="assets/images/homepage/databse-icons/Aws-rds.svg" alt="">
           <span>[AWS RDS]</span>
@@ -498,11 +497,11 @@
         <button>Whitepapers</button>
       </div>
 
-      <div class="grid md:grid-rows-1 grid-flow-col gap-10 mt-8">
-        <div class="grid md:grid-cols-4 gap-4">
+      <div class="grid lg:grid-rows-1 grid-flow-col gap-10 mt-4 lg:mt-8">
+        <div class="grid lg:grid-cols-4 lg:gap-4 gap-8">
           <div class="card shadow-xl">
             <div class="overflow-hidden"><img src="assets/images/homepage/insights.png" alt=""></div>
-            <div class="md:px-7 md:py-6">
+            <div class="lg:px-7 lg:py-6 p-[0.7rem]">
               <p class="date">August 5, 2023</p>
               <p class="mt-2 card-desc">Navigating the Digital Frontier: How Our IT Company Empowers Businesses for the Future</p>
             </div>
@@ -510,7 +509,7 @@
 
           <div class="card shadow-xl">
             <div class="overflow-hidden"><img src="assets/images/homepage/blog2.png" alt=""></div>
-            <div class="md:px-7 md:py-6">
+            <div class="lg:px-7 lg:py-6 p-[0.7rem]">
               <p class="date">August 5, 2023</p>
               <p class="mt-2 card-desc">Navigating the Digital Frontier: How Our IT Company Empowers Businesses for the Future</p>
             </div>
@@ -518,7 +517,7 @@
 
           <div class="card shadow-xl">
             <div class="overflow-hidden"><img src="assets/images/homepage/blog3.png" alt=""></div>
-            <div class="md:px-7 md:py-6">
+            <div class="lg:px-7 lg:py-6 p-[0.7rem]">
               <p class="date">August 5, 2023</p>
               <p class="mt-2 card-desc">Navigating the Digital Frontier: How Our IT Company Empowers Businesses for the Future</p>
             </div>
@@ -526,18 +525,16 @@
 
           <div class="card shadow-xl">
             <div class="overflow-hidden"><img src="assets/images/homepage/insights.png" alt=""></div>
-            <div class="md:px-7 md:py-6">
+            <div class="lg:px-7 lg:py-6 p-[0.7rem]">
               <p class="date">August 5, 2023</p>
               <p class="mt-2 card-desc">Navigating the Digital Frontier: How Our IT Company Empowers Businesses for the Future</p>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Insights ends -->
 
-    <!-- clients section starts -->
-    <div class="clients">
+      <!-- clients section starts -->
+    <div class="clients-mobile mt-8 shadow-xl">
       <div>
         <img src="assets/images/clients/bharat-jodo.svg" alt="">
         <img src="assets/images/clients/Axis-direct.svg" alt="">
@@ -550,14 +547,33 @@
         <img src="assets/images/clients/tvs.svg" alt="">
       </div>
     </div>
+
+    </div>
+    <!-- Insights ends -->
+
+  <!-- clients section starts -->
+  <div class="clients">
+    <div>
+      <img src="assets/images/clients/bharat-jodo.svg" alt="">
+      <img src="assets/images/clients/Axis-direct.svg" alt="">
+      <img src="assets/images/clients/aggust-silver-moon.svg" alt="">
+      <img src="assets/images/clients/CG-gov.svg" alt="">
+      <img src="assets/images/clients/gseava.svg" alt="">
+      <img src="assets/images/clients/pokersaint.svg" alt="">
+      <img src="assets/images/clients/tescon-green.svg" alt="">
+      <img src="assets/images/clients/theschon.svg" alt="">
+      <img src="assets/images/clients/tvs.svg" alt="">
+    </div>
+  </div>
+    
     <!-- clients section ends -->
 
 
     <!-- footer starts -->
-    <footer class="md:grid md:grid-cols-4 md:gap-24 md:pt-16 md:ps-24">
-      <div>
+    <footer class="lg:grid lg:grid-cols-4 lg:gap-24 lg:pt-16 lg:ps-24 ps-4 py-4">
+      <div class="mt-8 lg:mt-0">
         <p>Industries</p>
-        <p class="mt-4">Consumer Goods and Distribution</p>
+        <p class="mt-1 lg:mt-4">Consumer Goods and Distribution</p>
         <p>Communications, Media, and Information Services</p>
         <p>Education</p>
         <p>Energy, Resources, and Utilities</p>
@@ -570,9 +586,9 @@
         <p>Retail</p>
         <p>Travel and Logistics</p>
       </div>
-      <div>
+      <div class="mt-8 lg:mt-0">
         <p>Services</p>
-        <p class="mt-4">Cloud</p>
+        <p class="mt-1 lg:mt-4">Cloud</p>
         <p>Cognitive Business Operations</p>
         <p>Consulting</p>
         <p>Cybersecurity</p>
@@ -581,10 +597,10 @@
         <p>IoT and Digital Engineering</p>
         <p>Sustainability Services</p>
       </div>
-      <div class="grid grid-rows-2">
+      <div class="grid lg:grid-rows-2 grid-cols-2 mt-8 lg:mt-0">
         <div>
           <p>Quick Links</p>
-          <p class="mt-4"><a href="#">Home</a></p>
+          <p class="mt-1 lg:mt-4"><a href="#">Home</a></p>
           <p><a href="#">About Us</a></p>
           <p><a href="#">Our Projects</a></p>
           <p><a href="#">Disclaimer</a></p>
@@ -593,16 +609,16 @@
 
         <div>
           <p>Follow us on:</p>
-          <p class="mt-4"><a href="#">Instagram</a></p>
+          <p class="mt-1 lg:mt-4"><a href="#">Instagram</a></p>
           <p><a href="#">Facebook</a></p>
           <p><a href="#">Twitter</a></p>
           <p><a href="#">Linkedin</a></p>
         </div>
         
       </div>
-      <div>
+      <div class="mt-8 lg:mt-0">
         <p>Insights</p>
-        <p class="mt-4">Customer Stories</p>
+        <p class="mt-1 lg:mt-4">Customer Stories</p>
         <p>Cloud</p>
         <p>Blockchain</p>
         <p>IoT</p>
@@ -616,11 +632,11 @@
       </div>
     </footer>
 
-    <footer class="md:grid md:grid-cols-3 md:gap-24 md:ps-24 my-8">
-      <div>
+    <footer class="lg:grid lg:grid-cols-3 lg:gap-24 lg:ps-24 lg:my-8 px-4 pb-4">
+      <div class="hidden lg:block">
         <img src="assets/images/logo/logo.png" alt="" width="275">
       </div>
-      <div>
+      <div class="mt-4 lg:mt-0">
         <span class="address"><span style="color: var(--secondary-color); font-weight: 700;">Head Office :</span> #268/1, 2nd Floor,Matheshwari Building,
           Begaur Main Road,Bommanahalli-560068</span>
       </div>
@@ -640,12 +656,16 @@
     
         if (section === 'webplatform') {
           webPlatformSection.style.display = 'flex';
+          webPlatformBtn.style.fontWeight = '600'
           databaseSection.style.display = 'none';
           webPlatformBtn.style.color = 'var(--secondary-color)';  
           databaseBtn.style.color = 'white';
+          databaseBtn.style.fontWeight = 'normal';
         } else if (section === 'database') {
           webPlatformSection.style.display = 'none';
+          webPlatformBtn.style.fontWeight = 'normal'
           databaseSection.style.display = 'flex';
+          databaseBtn.style.fontWeight = '600';
           webPlatformBtn.style.color = 'white'; 
           databaseBtn.style.color = 'var(--secondary-color)';     
         }

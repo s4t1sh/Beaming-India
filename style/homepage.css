@@ -375,6 +375,7 @@
     padding: 7px 24px 7px 13px;
     align-items: center;
     gap: 79px;
+    /* justify-content: space-between; */
 }
 
 .backend{
@@ -504,6 +505,10 @@
     overflow-x: auto;
 }
 
+.clients-mobile{
+    display: none;
+}
+
 .clients div{
     display: flex;
     padding: 10px;
@@ -531,4 +536,158 @@ footer div p, footer div a,.address{
 
 #database{
     display: none;
+}
+
+.logo-img{
+    max-width: 200px;
+    height: auto;
+}
+
+@media (max-width: 1024px) {
+    .logo-img{
+        max-width: 175px !important;
+    }
+
+    nav{
+        padding: 0.7rem !important;
+    }
+
+    .feature-section{
+        gap: 20px !important;
+        width: 90% !important;
+    }
+
+    .feature-section p, .feature-section p span{
+        font-size: 30px !important;
+        line-height: 40px !important;
+    }
+
+    .uni-pad{
+        padding: 45px 10px !important;
+    }
+
+    .project-topics {
+        flex-wrap: wrap !important;
+        justify-content: space-between !important;
+    }
+
+    .project-topics button {
+        width: 47% !important; /* Adjust as needed */
+        margin-bottom: 8px !important; /* Adjust as needed */
+        padding: 12px 12px !important;
+    }
+
+    .project-topics button:last-child {
+        width: 50% !important; /* Adjust as needed */
+    }
+
+    .scope{
+        padding: 0 1rem !important;
+    }
+
+    .scope-title{
+        line-height: 33px !important;
+        font-size: 30px !important;
+    }
+
+    .tech-title{
+        padding: 0 1rem !important;
+        gap: 20px !important;
+    }
+
+    .webplatform, .database{
+        gap: 23px !important;
+    }
+
+    .techbox{
+        width: 100% !important;
+    }
+
+    .graphql, .react-hook, .apollo, .backend{
+        justify-content: space-between !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .insights{
+        padding: 1rem 1rem !important;
+    }
+
+    .insights-topics{
+        flex-wrap: wrap !important;
+        gap: 10px !important;
+    }
+
+    .title-section p, .heading{
+        font-size: 30px !important;
+        line-height: 40px !important;
+        margin-bottom: 8px !important;
+    }
+
+    .title-btn{
+        font-weight: 500 !important;
+    }
+
+    .about-section-headlines{
+        font-size: 13px !important;
+        line-height: 18px !important;
+    }
+
+    .about-section-desc{
+        font-size: 13px !important;
+        line-height: 23px !important;
+    }
+
+    .heading{
+        text-align: center !important;
+    }
+
+    .head-section{
+        gap: 18px !important;
+    }
+
+    .product-design-img1 {
+        width: 140.823px !important;
+        height: 148.886px !important;
+    }
+
+    .product-design-img2{
+        width: 172px !important;
+        height: 212px !important;
+        border: 0.917px solid #F2DDDD !important;
+    }
+
+    .prototyping-img2 {
+        width: 174.134px !important;
+        height: 92.067px !important;
+    }
+
+    
+
+    .clients{
+        display: none !important;
+    }
+
+    .clients-mobile{
+        display: inline-flex !important;
+        padding: 8px 10px !important;
+        justify-content: center !important;
+        align-items: center !important;
+        background: white !important;
+        overflow-x: auto !important;
+    }
+
+    .clients-mobile div{
+        display: flex !important;
+        align-items: center !important;
+        padding: 0px !important;
+        gap: 30px !important;
+    }
+    footer div p{
+        line-height: 28px !important;
+    }
+
+    .project-title{
+        font-size: 18px !important;
+        line-height: 30px !important;
+    }
 }
