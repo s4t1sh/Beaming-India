@@ -9,7 +9,8 @@
 }
 
 nav{
-    background: var(--primary-color);  position: sticky;
+    background: var(--primary-color);
+    position: sticky;
     top: 0%;
     z-index: 9;
 }
@@ -78,4 +79,19 @@ nav{
 
 .border-raidus-15{
     border-radius: 15px;
+}
+
+.logo-img{
+    max-width: 200px;
+    height: auto;
+}
+
+@media (max-width: 1024px) {
+    .logo-img{
+        max-width: 175px !important;
+    }
+
+    nav{
+        padding: 0.7rem !important;
+    }
 }
