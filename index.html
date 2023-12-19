@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="style/navbar.css" />
     <link rel="stylesheet" href="style/homepage.css" />
+    <link rel="stylesheet" href="style/hamburger-menu.css">
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -66,6 +67,23 @@
           <img src="assets/images/logo/arrow.svg" alt="" />
         </button>
       </div>
+
+      <div class="container">
+        <div class="menu-toggle" id="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav class="nav-menu">
+          <div class="close-btn" id="close-menu">&times;</div>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </nav>
 
     <!-- navbar ends -->
@@ -94,19 +112,23 @@
     <!-- Blue image section ends -->
 
     <div class="about-section">
-        <!-- about us section starts -->
+      <!-- about us section starts -->
       <div class="lg:pb-20">
         <div class="title-section ps-4 lg:ps-16 lg:pt-14 pt-8 pb-8">
           <button class="title-btn">About Us</button>
           <p>
-            Why should you <br/>
+            Why should you <br />
             Hope with us?
           </p>
         </div>
 
         <div class="lg:grid lg:grid-cols-3 lg:gap-4 mb-8 lg:mb-0">
           <div>
-            <img src="assets/images/homepage/office.png" alt="" class="lg:scale-110"/>
+            <img
+              src="assets/images/homepage/office.png"
+              alt=""
+              class="lg:scale-110"
+            />
           </div>
           <div class="lg:col-span-2 lg:ps-20 lg:pe-[10rem]">
             <div class="grid grid-rows-2 grid-flow-col gap-0 mt-8 lg:mt-0">
@@ -136,9 +158,13 @@
                   our efficient design solutions.
                 </p>
               </div>
-              <div class="lg:ps-16 pt-4 ps-4 lg:pt-8 border-t-2 border-t-[#E3E3E3]">
+              <div
+                class="lg:ps-16 pt-4 ps-4 lg:pt-8 border-t-2 border-t-[#E3E3E3]"
+              >
                 <img src="assets/images/homepage/🦾.png" alt="" />
-                <p class="about-section-headlines mt-2">Affordable Excellence</p>
+                <p class="about-section-headlines mt-2">
+                  Affordable Excellence
+                </p>
                 <p class="about-section-desc mt-1">
                   Get top-tier design solutions without the heavy costs
                   associated with hiring a full-time senior designer.
@@ -153,123 +179,221 @@
       <!-- services section starts -->
       <div class="services-section uni-pad">
         <div class="head-section">
-            <button class="title-btn">Services</button>
-            <p class="heading">
-                What services we offer.
+          <button class="title-btn">Services</button>
+          <p class="heading">What services we offer.</p>
+          <p class="about-section-desc text-center">
+            We provide full-scale branding and advertising services tailored to
+            your business needs. Whether you need a piece of content, social
+            media management, media placements, or a complete brand building
+            solution, we’ve got you covered. We help you navigate change.
+          </p>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-8 mt-12">
+          <div class="offers-section drop-shadow-lg">
+            <div class="flex gap-2">
+              <img
+                src="assets/images/homepage/icon-park-outline_web-page.svg"
+                alt=""
+                class="offer-icon"
+              />
+              <span class="offer-heading">Product Design.</span>
+            </div>
+            <p class="offer-desc">
+              We help plan, conceptualise, design and execute stunning, scalable
+              user interfaces and experiences for SaaS, web and native apps.
             </p>
-            <p class="about-section-desc text-center">
-                We provide full-scale branding and advertising services tailored to your business needs. Whether you need a piece of content, social media management, media placements, or a complete brand building solution, we’ve got you covered. We help you navigate change.
-              </p>
-          </div>
-
-          <div class="grid lg:grid-cols-2 gap-8 mt-12 ">
-            <div class="offers-section drop-shadow-lg">
-              <div class="flex gap-2">
-                <img src="assets/images/homepage/icon-park-outline_web-page.svg" alt="" class="offer-icon">
-                <span class="offer-heading">Product Design.</span>
-              </div>
-              <p class="offer-desc">We help plan, conceptualise, design and execute stunning, scalable user interfaces and experiences for SaaS, web and native apps.</p>
-              <div class="flex lg:mt-8 mt-4 lg:ps-3">
-                <img src="assets/images/homepage/product-design1.png" alt="" class="product-design-img1 mt-8">
-                <img src="assets/images/homepage/product-design2.png" alt="" class="product-design-img2">
-              </div>
-            </div>
-
-            <div class="offers-section drop-shadow-lg">
-              <div class="flex items-center gap-2">
-                <img src="assets/images/homepage/iconoir_design-nib.svg" alt="" class="offer-icon">
-                <span class="offer-heading">Web Design.</span>
-              </div>
-              <p class="offer-desc">Powerful, engaging, responsive websites enhance your brand and beautifully showcase your product or service across all devices and modes.</p>
-              <img src="assets/images/homepage/web-design.png" alt="" class="mt-8" style="border-radius: 15.593px;">
+            <div class="flex lg:mt-8 mt-4 lg:ps-3">
+              <img
+                src="assets/images/homepage/product-design1.png"
+                alt=""
+                class="product-design-img1 mt-8"
+              />
+              <img
+                src="assets/images/homepage/product-design2.png"
+                alt=""
+                class="product-design-img2"
+              />
             </div>
           </div>
 
-          <div class="grid lg:grid-cols-3 gap-10 mt-12 ">
-            <div class="offers-section drop-shadow-lg">
-              <div class="flex gap-2">
-                <img src="assets/images/homepage/Group.svg" alt="" class="offer-icon">
-                <span class="offer-heading">Prototyping.</span>
-              </div>
-              <p class="offer-desc">Bring your ideas to life with high-fidelity prototyping powered by conditional logic.</p>
-              <div class="flex pt-8 flex-col relative lg:ps-4 ">
-                <img src="assets/images/homepage/prototyping1.png" alt="" class="prototyping-img1 ms-40 ">
-                <img src="assets/images/homepage/prototyping2.png" alt="" class="prototyping-img2 absolute lg:top-[82%] z-[-1]  top-[23%]">
-              </div>
+          <div class="offers-section drop-shadow-lg">
+            <div class="flex items-center gap-2">
+              <img
+                src="assets/images/homepage/iconoir_design-nib.svg"
+                alt=""
+                class="offer-icon"
+              />
+              <span class="offer-heading">Web Design.</span>
             </div>
+            <p class="offer-desc">
+              Powerful, engaging, responsive websites enhance your brand and
+              beautifully showcase your product or service across all devices
+              and modes.
+            </p>
+            <img
+              src="assets/images/homepage/web-design.png"
+              alt=""
+              class="mt-8"
+              style="border-radius: 15.593px"
+            />
+          </div>
+        </div>
 
-            <div class="offers-section drop-shadow-lg">
-              <div class="flex items-center gap-2">
-                <img src="assets/images/homepage/Group (1).svg" alt="" class="offer-icon">
-                <span class="offer-heading">Design System</span>
-              </div>
-              <p class="offer-desc mb-2">Token-powered design systems for beautiful and consistent user interfaces and experiences.</p>
-              <img src="assets/images/homepage/deign-system.png" alt="">
+        <div class="grid lg:grid-cols-3 gap-10 mt-12">
+          <div class="offers-section drop-shadow-lg">
+            <div class="flex gap-2">
+              <img
+                src="assets/images/homepage/Group.svg"
+                alt=""
+                class="offer-icon"
+              />
+              <span class="offer-heading">Prototyping.</span>
             </div>
-
-            <div class="offers-section drop-shadow-lg">
-              <div class="flex items-center gap-2">
-                <img src="assets/images/homepage/Vector.svg" alt="" class="offer-icon">
-                <span class="offer-heading">Visual Identity</span>
-              </div>
-              <p class="offer-desc mb-2">Professional and impactful visual identity design with optional hosted guidelines.</p>
-              <img src="assets/images/homepage/visual.png" alt="">
+            <p class="offer-desc">
+              Bring your ideas to life with high-fidelity prototyping powered by
+              conditional logic.
+            </p>
+            <div class="flex pt-8 flex-col relative lg:ps-4">
+              <img
+                src="assets/images/homepage/prototyping1.png"
+                alt=""
+                class="prototyping-img1 ms-40"
+              />
+              <img
+                src="assets/images/homepage/prototyping2.png"
+                alt=""
+                class="prototyping-img2 absolute lg:top-[82%] z-[-1] top-[23%]"
+              />
             </div>
           </div>
 
-          <div class="grid lg:grid-cols-3 gap-10 mt-12 ">
-            <div class="offers-section drop-shadow-lg">
-              <div class="flex gap-2">
-                <img src="assets/images/homepage/tdesign_code.svg" alt="" class="offer-icon">
-                <span class="offer-heading">Web Dev.</span>
-              </div>
-              <p class="offer-desc">We develop websites with gorgeous interactions using the latest no-code platforms.</p>
-              
+          <div class="offers-section drop-shadow-lg">
+            <div class="flex items-center gap-2">
+              <img
+                src="assets/images/homepage/Group (1).svg"
+                alt=""
+                class="offer-icon"
+              />
+              <span class="offer-heading">Design System</span>
             </div>
-
-            <div class="offers-section drop-shadow-lg">
-              <div class="flex items-center gap-2">
-                <img src="assets/images/homepage/Group (1).svg" alt="" class="offer-icon">
-                <span class="offer-heading">Funnel</span>
-              </div>
-              <p class="offer-desc">Custom landing page to CRM funnels, that convert like crazy and automate everything.</p>
-            </div>
-
-            <div class="offers-section drop-shadow-lg">
-              <div class="flex items-center gap-2">
-                <img src="assets/images/homepage/Vector.svg" alt="" class="offer-icon">
-                <span class="offer-heading">UI Motion</span>
-              </div>
-              <p class="offer-desc">Animated micro-interaction graphics, banners and adverts designed to create delight.</p>
-            </div>
+            <p class="offer-desc mb-2">
+              Token-powered design systems for beautiful and consistent user
+              interfaces and experiences.
+            </p>
+            <img src="assets/images/homepage/deign-system.png" alt="" />
           </div>
 
-          <div class="grid lg:grid-cols-3 gap-10 mt-12 ">
-            <div class="offers-section drop-shadow-lg">
-              <div class="flex gap-2">
-                <img src="assets/images/homepage/tdesign_code.svg" alt="" class="offer-icon">
-                <span class="offer-heading">Usablity Audit</span>
-              </div>
-              <p class="offer-desc">A full product or website UX teardown with a report identifying usability flaws.</p>
-              
+          <div class="offers-section drop-shadow-lg">
+            <div class="flex items-center gap-2">
+              <img
+                src="assets/images/homepage/Vector.svg"
+                alt=""
+                class="offer-icon"
+              />
+              <span class="offer-heading">Visual Identity</span>
             </div>
-
-            <div class="offers-section drop-shadow-lg">
-              <div class="flex items-center gap-2">
-                <img src="assets/images/homepage/Group (1).svg" alt="" class="offer-icon">
-                <span class="offer-heading">Graphic Design</span>
-              </div>
-              <p class="offer-desc">Professionally designed marketing graphics for all your online and offline campaigns.</p>
-            </div>
-
-            <div class="offers-section drop-shadow-lg">
-              <div class="flex items-center gap-2">
-                <img src="assets/images/homepage/iconoir_design-nib.svg" alt="" class="offer-icon">
-                <span class="offer-heading">Design Services</span>
-              </div>
-              <p class="offer-desc">Are you looking for a design service not listed? Book a call, we can probably help.</p>
-            </div>
+            <p class="offer-desc mb-2">
+              Professional and impactful visual identity design with optional
+              hosted guidelines.
+            </p>
+            <img src="assets/images/homepage/visual.png" alt="" />
           </div>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-10 mt-12">
+          <div class="offers-section drop-shadow-lg">
+            <div class="flex gap-2">
+              <img
+                src="assets/images/homepage/tdesign_code.svg"
+                alt=""
+                class="offer-icon"
+              />
+              <span class="offer-heading">Web Dev.</span>
+            </div>
+            <p class="offer-desc">
+              We develop websites with gorgeous interactions using the latest
+              no-code platforms.
+            </p>
+          </div>
+
+          <div class="offers-section drop-shadow-lg">
+            <div class="flex items-center gap-2">
+              <img
+                src="assets/images/homepage/Group (1).svg"
+                alt=""
+                class="offer-icon"
+              />
+              <span class="offer-heading">Funnel</span>
+            </div>
+            <p class="offer-desc">
+              Custom landing page to CRM funnels, that convert like crazy and
+              automate everything.
+            </p>
+          </div>
+
+          <div class="offers-section drop-shadow-lg">
+            <div class="flex items-center gap-2">
+              <img
+                src="assets/images/homepage/Vector.svg"
+                alt=""
+                class="offer-icon"
+              />
+              <span class="offer-heading">UI Motion</span>
+            </div>
+            <p class="offer-desc">
+              Animated micro-interaction graphics, banners and adverts designed
+              to create delight.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-10 mt-12">
+          <div class="offers-section drop-shadow-lg">
+            <div class="flex gap-2">
+              <img
+                src="assets/images/homepage/tdesign_code.svg"
+                alt=""
+                class="offer-icon"
+              />
+              <span class="offer-heading">Usablity Audit</span>
+            </div>
+            <p class="offer-desc">
+              A full product or website UX teardown with a report identifying
+              usability flaws.
+            </p>
+          </div>
+
+          <div class="offers-section drop-shadow-lg">
+            <div class="flex items-center gap-2">
+              <img
+                src="assets/images/homepage/Group (1).svg"
+                alt=""
+                class="offer-icon"
+              />
+              <span class="offer-heading">Graphic Design</span>
+            </div>
+            <p class="offer-desc">
+              Professionally designed marketing graphics for all your online and
+              offline campaigns.
+            </p>
+          </div>
+
+          <div class="offers-section drop-shadow-lg">
+            <div class="flex items-center gap-2">
+              <img
+                src="assets/images/homepage/iconoir_design-nib.svg"
+                alt=""
+                class="offer-icon"
+              />
+              <span class="offer-heading">Design Services</span>
+            </div>
+            <p class="offer-desc">
+              Are you looking for a design service not listed? Book a call, we
+              can probably help.
+            </p>
+          </div>
+        </div>
       </div>
 
       <!-- services section ends -->
@@ -277,7 +401,9 @@
 
     <!-- projects section starts -->
     <div class="uni-pad">
-      <p class="work-title">Our Works<span style="color: var(--secondary-color);">.</span></p>
+      <p class="work-title">
+        Our Works<span style="color: var(--secondary-color)">.</span>
+      </p>
       <div class="line"></div>
 
       <div class="project-topics">
@@ -289,9 +415,13 @@
       </div>
 
       <div class="grid lg:grid-cols-2 gap-8 mt-16">
-        <div >
+        <div>
           <div class="overflow-hidden relative border-raidus-15 shadow-xl">
-            <img src="assets/images/homepage/work1.png" alt="" class="project-img">
+            <img
+              src="assets/images/homepage/work1.png"
+              alt=""
+              class="project-img"
+            />
             <div class="project-detail">
               <button>Development</button>
               <button>UI/UX Design</button>
@@ -299,12 +429,21 @@
           </div>
           <div class="flex justify-between mt-10">
             <p class="project-title">Building the Future: Tescon Green</p>
-            <p class="know-more flex items-center gap-3">Know More <span><img src="assets/images/homepage/Arrow 1.svg" alt=""></span></p>
+            <p class="know-more flex items-center gap-3">
+              Know More
+              <span
+                ><img src="assets/images/homepage/Arrow 1.svg" alt=""
+              /></span>
+            </p>
           </div>
         </div>
-        <div >
+        <div>
           <div class="overflow-hidden relative border-raidus-15 shadow-xl">
-            <img src="assets/images/homepage/work2.png" alt="" class="project-img">
+            <img
+              src="assets/images/homepage/work2.png"
+              alt=""
+              class="project-img"
+            />
             <div class="project-detail">
               <button>Development</button>
               <button>UI/UX Design</button>
@@ -312,7 +451,12 @@
           </div>
           <div class="flex justify-between mt-[2.3rem]">
             <p class="project-title">Building the Future: Tescon Green</p>
-            <p class="know-more flex items-center gap-3">Know More <span><img src="assets/images/homepage/Arrow 1.svg" alt=""></span></p>
+            <p class="know-more flex items-center gap-3">
+              Know More
+              <span
+                ><img src="assets/images/homepage/Arrow 1.svg" alt=""
+              /></span>
+            </p>
           </div>
         </div>
       </div>
@@ -320,7 +464,11 @@
       <div class="grid lg:grid-cols-2 gap-8 mt-14">
         <div>
           <div class="overflow-hidden relative border-raidus-15 shadow-xl">
-            <img src="assets/images/homepage/work2.png" alt="" class="project-img">
+            <img
+              src="assets/images/homepage/work2.png"
+              alt=""
+              class="project-img"
+            />
             <div class="project-detail">
               <button>Development</button>
               <button>UI/UX Design</button>
@@ -328,12 +476,21 @@
           </div>
           <div class="flex justify-between mt-[1.8rem]">
             <p class="project-title">Building the Future: Tescon Green</p>
-            <p class="know-more flex items-center gap-3">Know More <span><img src="assets/images/homepage/Arrow 1.svg" alt=""></span></p>
+            <p class="know-more flex items-center gap-3">
+              Know More
+              <span
+                ><img src="assets/images/homepage/Arrow 1.svg" alt=""
+              /></span>
+            </p>
           </div>
         </div>
         <div>
           <div class="overflow-hidden relative border-raidus-15 shadow-xl">
-            <img src="assets/images/homepage/work2.png" alt="" class="project-img">
+            <img
+              src="assets/images/homepage/work2.png"
+              alt=""
+              class="project-img"
+            />
             <div class="project-detail">
               <button>Development</button>
               <button>UI/UX Design</button>
@@ -341,7 +498,12 @@
           </div>
           <div class="flex justify-between mt-[1.8rem]">
             <p class="project-title">Building the Future: Tescon Green</p>
-            <p class="know-more flex items-center gap-3">Know More <span><img src="assets/images/homepage/Arrow 1.svg" alt=""></span></p>
+            <p class="know-more flex items-center gap-3">
+              Know More
+              <span
+                ><img src="assets/images/homepage/Arrow 1.svg" alt=""
+              /></span>
+            </p>
           </div>
         </div>
       </div>
@@ -352,17 +514,26 @@
     <div class="scope text-center">
       <button class="title-btn mt-8">Scope</button>
       <p class="scope-title mt-8">Our Scope Of Work</p>
-      <p class="scope-desc mt-8">We provide full-scale branding and advertising services tailored to your business needs. Whether you need a piece of content, social media management, media placements, or a complete brand building solution, we’ve got you covered. We help you navigate change.</p>
+      <p class="scope-desc mt-8">
+        We provide full-scale branding and advertising services tailored to your
+        business needs. Whether you need a piece of content, social media
+        management, media placements, or a complete brand building solution,
+        we’ve got you covered. We help you navigate change.
+      </p>
     </div>
 
     <div class="text-center mt-16">
       <div class="tech-title">
-        <span id="webBtn" onclick="toggleTech('webplatform')">Web Platform</span>
+        <span id="webBtn" onclick="toggleTech('webplatform')"
+          >Web Platform</span
+        >
         <span id="databaseBtn" onclick="toggleTech('database')">Database</span>
         <span id="cloudBtn" onclick="toggleTech('cloud')">Cloud & Devops</span>
-        <span id="mobileAppBtn" onclick="toggleTech('mobileapps')">Mobile Apps</span>
+        <span id="mobileAppBtn" onclick="toggleTech('mobileapps')"
+          >Mobile Apps</span
+        >
       </div>
-      <div class=" h-1 mt-4" style="background: rgba(230, 230, 230, 0.10);"></div>
+      <div class="h-1 mt-4" style="background: rgba(230, 230, 230, 0.1)"></div>
     </div>
 
     <!-- webplatform starts -->
@@ -374,35 +545,47 @@
 
       <div class="lg:grid lg:grid-rows-2 lg:grid-flow-col lg:gap-8 techbox">
         <div class="graphql tech-border">
-          <img src="assets/images/homepage/webplatform-icons/graphql.svg" alt="">
+          <img
+            src="assets/images/homepage/webplatform-icons/graphql.svg"
+            alt=""
+          />
           <span>[GRAPH QL]</span>
         </div>
         <div class="react-hook tech-border">
-          <img src="assets/images/homepage/webplatform-icons/reactform.svg" alt="">
+          <img
+            src="assets/images/homepage/webplatform-icons/reactform.svg"
+            alt=""
+          />
           <span>[REACT HOOK FORM]</span>
         </div>
         <div class="graphql tech-border">
-          <img src="assets/images/homepage/webplatform-icons/ant.svg" alt="">
+          <img src="assets/images/homepage/webplatform-icons/ant.svg" alt="" />
           <span>[ANT DESIGN]</span>
         </div>
         <div class="graphql tech-border">
-          <img src="assets/images/homepage/webplatform-icons/mui.svg" alt="">
+          <img src="assets/images/homepage/webplatform-icons/mui.svg" alt="" />
           <span>[MATERIAL UI]</span>
         </div>
         <div class="apollo tech-border">
-          <img src="assets/images/homepage/webplatform-icons/apollo.svg" alt="">
+          <img
+            src="assets/images/homepage/webplatform-icons/apollo.svg"
+            alt=""
+          />
           <span>[APOLLO CLIENT]</span>
         </div>
         <div class="graphql tech-border">
-          <img src="assets/images/homepage/webplatform-icons/next.svg" alt="">
+          <img src="assets/images/homepage/webplatform-icons/next.svg" alt="" />
           <span>[NEXT. JS]</span>
         </div>
         <div class="graphql tech-border">
-          <img src="assets/images/homepage/webplatform-icons/react.svg" alt="">
+          <img
+            src="assets/images/homepage/webplatform-icons/react.svg"
+            alt=""
+          />
           <span>[REACT.JS]</span>
         </div>
         <div class="graphql tech-border">
-          <img src="assets/images/homepage/webplatform-icons/rest.svg" alt="">
+          <img src="assets/images/homepage/webplatform-icons/rest.svg" alt="" />
           <span>[REST API]</span>
         </div>
       </div>
@@ -412,33 +595,39 @@
         <!-- <span class="ps-6">33 Developers</span> -->
       </div>
 
-      <div class="lg:grid  lg:grid-rows-2 lg:grid-flow-col lg:gap-8 techbox">
+      <div class="lg:grid lg:grid-rows-2 lg:grid-flow-col lg:gap-8 techbox">
         <div class="backend tech-border">
-          <img src="assets/images/homepage/webplatform-icons/spring.svg" alt="">
+          <img
+            src="assets/images/homepage/webplatform-icons/spring.svg"
+            alt=""
+          />
           <span>[SPRING]</span>
         </div>
         <div class="backend tech-border">
-          <img src="assets/images/homepage/webplatform-icons/java.svg" alt="">
+          <img src="assets/images/homepage/webplatform-icons/java.svg" alt="" />
           <span>[JAVA]</span>
         </div>
         <div class="graphql tech-border">
-          <img src="assets/images/homepage/webplatform-icons/net.svg" alt="">
+          <img src="assets/images/homepage/webplatform-icons/net.svg" alt="" />
           <span>[.NET]</span>
         </div>
         <div class="backend tech-border">
-          <img src="assets/images/homepage/webplatform-icons/node.svg" alt="">
+          <img src="assets/images/homepage/webplatform-icons/node.svg" alt="" />
           <span>[NODE.JS]</span>
         </div>
         <div class="backend tech-border">
-          <img src="assets/images/homepage/webplatform-icons/laravel.svg" alt="">
+          <img
+            src="assets/images/homepage/webplatform-icons/laravel.svg"
+            alt=""
+          />
           <span>[LARAVEL]</span>
         </div>
         <div class="backend tech-border">
-          <img src="assets/images/homepage/webplatform-icons/php.svg" alt="">
+          <img src="assets/images/homepage/webplatform-icons/php.svg" alt="" />
           <span>[PHP]</span>
         </div>
         <div class="graphql tech-border">
-          <img src="assets/images/homepage/webplatform-icons/rest.svg" alt="">
+          <img src="assets/images/homepage/webplatform-icons/rest.svg" alt="" />
           <span>[REST API]</span>
         </div>
       </div>
@@ -454,39 +643,39 @@
 
       <div class="lg:grid lg:grid-rows-2 lg:grid-cols-4 lg:gap-8 techbox">
         <div class="graphql tech-border">
-          <img src="assets/images/homepage/databse-icons/aws.png" alt="">
+          <img src="assets/images/homepage/databse-icons/aws.png" alt="" />
           <span>[AWS RDS]</span>
         </div>
         <div class="react-hook tech-border">
-          <img src="assets/images/homepage/databse-icons/sql.png" alt="">
+          <img src="assets/images/homepage/databse-icons/sql.png" alt="" />
           <span>[MYSQL]</span>
         </div>
         <div class="graphql tech-border">
-          <img src="assets/images/homepage/databse-icons/mongo.png" alt="">
+          <img src="assets/images/homepage/databse-icons/mongo.png" alt="" />
           <span>[MONGO DB]</span>
         </div>
         <div class="graphql tech-border">
-          <img src="assets/images/homepage/databse-icons/postgrel.png" alt="">
+          <img src="assets/images/homepage/databse-icons/postgrel.png" alt="" />
           <span>[POSTGRESQL]</span>
         </div>
         <div class="apollo tech-border">
-          <img src="assets/images/homepage/databse-icons/redis.png" alt="">
+          <img src="assets/images/homepage/databse-icons/redis.png" alt="" />
           <span>[REDIS]</span>
         </div>
         <div class="graphql tech-border">
-          <img src="assets/images/homepage/databse-icons/elastic.png" alt="">
+          <img src="assets/images/homepage/databse-icons/elastic.png" alt="" />
           <span>[ELASTIC SEARCH]</span>
         </div>
       </div>
     </div>
     <!-- database ends -->
-    
+
     <!-- scope of work ends -->
 
     <!-- Insights starts -->
     <div class="insights">
       <div class="insights-heading">
-        Insights<span style="color: var(--secondary-color);">.</span>
+        Insights<span style="color: var(--secondary-color)">.</span>
       </div>
       <div class="insights-topics">
         <button>Education</button>
@@ -499,77 +688,97 @@
       <div class="grid lg:grid-rows-1 grid-flow-col gap-10 mt-4 lg:mt-8">
         <div class="grid lg:grid-cols-4 lg:gap-4 gap-8">
           <div class="card shadow-xl">
-            <div class="overflow-hidden"><img src="assets/images/homepage/insights.png" alt=""></div>
+            <div class="overflow-hidden">
+              <img src="assets/images/homepage/insights.png" alt="" />
+            </div>
             <div class="lg:px-7 lg:py-6 p-[0.7rem]">
               <p class="date">August 5, 2023</p>
-              <p class="mt-2 card-desc">Navigating the Digital Frontier: How Our IT Company Empowers Businesses for the Future</p>
+              <p class="mt-2 card-desc">
+                Navigating the Digital Frontier: How Our IT Company Empowers
+                Businesses for the Future
+              </p>
             </div>
           </div>
 
           <div class="card shadow-xl">
-            <div class="overflow-hidden"><img src="assets/images/homepage/blog2.png" alt=""></div>
+            <div class="overflow-hidden">
+              <img src="assets/images/homepage/blog2.png" alt="" />
+            </div>
             <div class="lg:px-7 lg:py-6 p-[0.7rem]">
               <p class="date">August 5, 2023</p>
-              <p class="mt-2 card-desc">Navigating the Digital Frontier: How Our IT Company Empowers Businesses for the Future</p>
+              <p class="mt-2 card-desc">
+                Navigating the Digital Frontier: How Our IT Company Empowers
+                Businesses for the Future
+              </p>
             </div>
           </div>
 
           <div class="card shadow-xl">
-            <div class="overflow-hidden"><img src="assets/images/homepage/blog3.png" alt=""></div>
+            <div class="overflow-hidden">
+              <img src="assets/images/homepage/blog3.png" alt="" />
+            </div>
             <div class="lg:px-7 lg:py-6 p-[0.7rem]">
               <p class="date">August 5, 2023</p>
-              <p class="mt-2 card-desc">Navigating the Digital Frontier: How Our IT Company Empowers Businesses for the Future</p>
+              <p class="mt-2 card-desc">
+                Navigating the Digital Frontier: How Our IT Company Empowers
+                Businesses for the Future
+              </p>
             </div>
           </div>
 
           <div class="card shadow-xl">
-            <div class="overflow-hidden"><img src="assets/images/homepage/insights.png" alt=""></div>
+            <div class="overflow-hidden">
+              <img src="assets/images/homepage/insights.png" alt="" />
+            </div>
             <div class="lg:px-7 lg:py-6 p-[0.7rem]">
               <p class="date">August 5, 2023</p>
-              <p class="mt-2 card-desc">Navigating the Digital Frontier: How Our IT Company Empowers Businesses for the Future</p>
+              <p class="mt-2 card-desc">
+                Navigating the Digital Frontier: How Our IT Company Empowers
+                Businesses for the Future
+              </p>
             </div>
           </div>
         </div>
       </div>
 
       <!-- clients section starts -->
-    <div class="clients-mobile mt-8 shadow-xl">
-      <div>
-        <img src="assets/images/clients/bharat-jodo.svg" alt="">
-        <img src="assets/images/clients/Axis-direct.svg" alt="">
-        <img src="assets/images/clients/aggust-silver-moon.svg" alt="">
-        <img src="assets/images/clients/CG-gov.svg" alt="">
-        <img src="assets/images/clients/gseava.svg" alt="">
-        <img src="assets/images/clients/pokersaint.svg" alt="">
-        <img src="assets/images/clients/tescon-green.svg" alt="">
-        <img src="assets/images/clients/theschon.svg" alt="">
-        <img src="assets/images/clients/tvs.svg" alt="">
+      <div class="clients-mobile mt-8 shadow-xl">
+        <div>
+          <img src="assets/images/clients/bharat-jodo.svg" alt="" />
+          <img src="assets/images/clients/Axis-direct.svg" alt="" />
+          <img src="assets/images/clients/aggust-silver-moon.svg" alt="" />
+          <img src="assets/images/clients/CG-gov.svg" alt="" />
+          <img src="assets/images/clients/gseava.svg" alt="" />
+          <img src="assets/images/clients/pokersaint.svg" alt="" />
+          <img src="assets/images/clients/tescon-green.svg" alt="" />
+          <img src="assets/images/clients/theschon.svg" alt="" />
+          <img src="assets/images/clients/tvs.svg" alt="" />
+        </div>
       </div>
-    </div>
-
     </div>
     <!-- Insights ends -->
 
-  <!-- clients section starts -->
-  <div class="clients">
-    <div>
-      <img src="assets/images/clients/bharat-jodo.svg" alt="">
-      <img src="assets/images/clients/Axis-direct.svg" alt="">
-      <img src="assets/images/clients/aggust-silver-moon.svg" alt="">
-      <img src="assets/images/clients/CG-gov.svg" alt="">
-      <img src="assets/images/clients/gseava.svg" alt="">
-      <img src="assets/images/clients/pokersaint.svg" alt="">
-      <img src="assets/images/clients/tescon-green.svg" alt="">
-      <img src="assets/images/clients/theschon.svg" alt="">
-      <img src="assets/images/clients/tvs.svg" alt="">
+    <!-- clients section starts -->
+    <div class="clients">
+      <div>
+        <img src="assets/images/clients/bharat-jodo.svg" alt="" />
+        <img src="assets/images/clients/Axis-direct.svg" alt="" />
+        <img src="assets/images/clients/aggust-silver-moon.svg" alt="" />
+        <img src="assets/images/clients/CG-gov.svg" alt="" />
+        <img src="assets/images/clients/gseava.svg" alt="" />
+        <img src="assets/images/clients/pokersaint.svg" alt="" />
+        <img src="assets/images/clients/tescon-green.svg" alt="" />
+        <img src="assets/images/clients/theschon.svg" alt="" />
+        <img src="assets/images/clients/tvs.svg" alt="" />
+      </div>
     </div>
-  </div>
-    
+
     <!-- clients section ends -->
 
-
     <!-- footer starts -->
-    <footer class="lg:grid lg:grid-cols-4 lg:gap-24 lg:pt-16 lg:ps-24 ps-4 py-4">
+    <footer
+      class="lg:grid lg:grid-cols-4 lg:gap-24 lg:pt-16 lg:ps-24 ps-4 py-4"
+    >
       <div class="mt-8 lg:mt-0">
         <p>Industries</p>
         <p class="mt-1 lg:mt-4">Consumer Goods and Distribution</p>
@@ -596,7 +805,7 @@
         <p>IoT and Digital Engineering</p>
         <p>Sustainability Services</p>
       </div>
-      
+
       <div class="lg:grid-rows-2 mt-8 lg:mt-0 hidden lg:grid">
         <div>
           <p>Quick Links</p>
@@ -615,7 +824,7 @@
           <p><a href="#">Linkedin</a></p>
         </div>
       </div>
-      
+
       <div class="grid grid-cols-2 mt-8 lg:mt-0 lg:hidden">
         <div>
           <p>Quick Links</p>
@@ -653,42 +862,54 @@
 
     <footer class="lg:grid lg:grid-cols-3 lg:gap-24 lg:ps-24 lg:my-8 px-4 pb-4">
       <div class="hidden lg:block">
-        <img src="assets/images/logo/logo.png" alt="" width="275">
+        <img src="assets/images/logo/logo.png" alt="" width="275" />
       </div>
       <div class="mt-4 lg:mt-0">
-        <span class="address"><span style="color: var(--secondary-color); font-weight: 700;">Head Office :</span> #268/1, 2nd Floor,Matheshwari Building,
-          Begaur Main Road,Bommanahalli-560068</span>
+        <span class="address"
+          ><span style="color: var(--secondary-color); font-weight: 700"
+            >Head Office :</span
+          >
+          #268/1, 2nd Floor,Matheshwari Building, Begaur Main
+          Road,Bommanahalli-560068</span
+        >
       </div>
       <div>
-        <span class="address"><span style="color: var(--secondary-color); font-weight: 700;">Raipur Office :</span> Block B-312, Babylon Tower
-          Jivan Vihar, Raipur, Chhattisgarh 492001</span>
+        <span class="address"
+          ><span style="color: var(--secondary-color); font-weight: 700"
+            >Raipur Office :</span
+          >
+          Block B-312, Babylon Tower Jivan Vihar, Raipur, Chhattisgarh
+          492001</span
+        >
       </div>
     </footer>
     <!-- footer ends -->
 
     <script>
       function toggleTech(section) {
-        const webPlatformSection = document.getElementById('webplatform');
-        const databaseSection = document.getElementById('database');
-        const webPlatformBtn = document.getElementById('webBtn');
-        const databaseBtn = document.getElementById('databaseBtn');
-    
-        if (section === 'webplatform') {
-          webPlatformSection.style.display = 'flex';
-          webPlatformBtn.style.fontWeight = '600'
-          databaseSection.style.display = 'none';
-          webPlatformBtn.style.color = 'var(--secondary-color)';  
-          databaseBtn.style.color = 'white';
-          databaseBtn.style.fontWeight = 'normal';
-        } else if (section === 'database') {
-          webPlatformSection.style.display = 'none';
-          webPlatformBtn.style.fontWeight = 'normal'
-          databaseSection.style.display = 'flex';
-          databaseBtn.style.fontWeight = '600';
-          webPlatformBtn.style.color = 'white'; 
-          databaseBtn.style.color = 'var(--secondary-color)';     
+        const webPlatformSection = document.getElementById("webplatform");
+        const databaseSection = document.getElementById("database");
+        const webPlatformBtn = document.getElementById("webBtn");
+        const databaseBtn = document.getElementById("databaseBtn");
+
+        if (section === "webplatform") {
+          webPlatformSection.style.display = "flex";
+          webPlatformBtn.style.fontWeight = "600";
+          databaseSection.style.display = "none";
+          webPlatformBtn.style.color = "var(--secondary-color)";
+          databaseBtn.style.color = "white";
+          databaseBtn.style.fontWeight = "normal";
+        } else if (section === "database") {
+          webPlatformSection.style.display = "none";
+          webPlatformBtn.style.fontWeight = "normal";
+          databaseSection.style.display = "flex";
+          databaseBtn.style.fontWeight = "600";
+          webPlatformBtn.style.color = "white";
+          databaseBtn.style.color = "var(--secondary-color)";
         }
       }
     </script>
+
+    <script src="js/menu.js"></script>
   </body>
 </html>
