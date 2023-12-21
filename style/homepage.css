@@ -371,7 +371,6 @@
 }
 
 .graphql{
-    width: 308px;
     display: flex;
     padding: 7px 24px 7px 13px;
     align-items: center;
@@ -689,9 +688,5 @@ footer div p, footer div a,.address{
     .project-title{
         font-size: 18px !important;
         line-height: 30px !important;
-    }
-
-    .graphql{
-        width: 100%;
     }
 }
