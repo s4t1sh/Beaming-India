@@ -210,7 +210,7 @@
 .project-topics button{
     border-radius: 55px;
     border: 2px solid #FFF;
-    padding: 12px 24px;
+    padding: 6px 15px;
     color: #FFF;
     font-size: 13px;
     font-style: normal;
@@ -222,12 +222,12 @@
     transition: background-position 300ms ease-in-out, color 300ms ease-in-out, transform 300ms ease-in-out;
 }
 
-.project-topics button:hover  {
+/* .project-topics button:hover  {
     background-position: 100% 100%;
     color: var(--primary-color);
     box-shadow: 0 0 50px 5px rgba(255, 255, 255, 0.70);
     transform: translate(0,-5px);
-}
+} */
 
 .project-img{
     transition: all 500ms ease-in-out;
@@ -371,11 +371,11 @@
 }
 
 .graphql{
+    width: 308px;
     display: flex;
     padding: 7px 24px 7px 13px;
     align-items: center;
-    gap: 79px;
-    /* justify-content: space-between; */
+    justify-content: space-between;
 }
 
 .backend{
@@ -444,12 +444,12 @@
 .insights-topics{
     display: flex;
     align-items: flex-start;
-    gap: 16px;
+    gap: 10px;
 }
 
 .insights-topics button{
     display: flex;
-    padding: 12px 24px;
+    padding: 6px 15px;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -689,5 +689,9 @@ footer div p, footer div a,.address{
     .project-title{
         font-size: 18px !important;
         line-height: 30px !important;
+    }
+
+    .graphql{
+        width: 100%;
     }
 }
