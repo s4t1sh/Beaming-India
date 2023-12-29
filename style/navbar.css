@@ -13,6 +13,8 @@ nav{
     position: sticky;
     top: 0%;
     z-index: 9;
+    backdrop-filter: blur(0);
+    -webkit-backdrop-filter: blur(0);
 }
 
 .navbar{

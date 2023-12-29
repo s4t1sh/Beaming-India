@@ -42,7 +42,7 @@
     <!-- navbar starts -->
 
     <nav
-      class="w-full flex lg:justify-between lg:px-[99px] lg:py-[10px] lg:items-center text-white"
+      class="w-full flex lg:justify-between lg:px-[99px] lg:py-[10px] lg:items-center text-white" id="navbar"
     >
       <div class="pt-3 lg:pt-0">
         <img
@@ -113,7 +113,7 @@
     </div>
     <!-- Blue image section ends -->
 
-    <div class="about-section">
+    <div class="about-section" id="about">
       <!-- about us section starts -->
       <div class="lg:pb-20">
         <div class="title-section ps-4 lg:ps-16 lg:pt-14 pt-8 pb-8">
@@ -677,7 +677,7 @@
     <!-- scope of work ends -->
 
     <!-- Insights starts -->
-    <div class="insights">
+    <div class="insights" id="insights">
       <div class="insights-heading">
         Insights<span style="color: var(--secondary-color)">.</span>
       </div>
@@ -888,6 +888,37 @@
       </div>
     </footer>
     <!-- footer ends -->
+
+    <script>
+      // JavaScript to handle the blur effect on entering the 'about' section
+      const nav = document.getElementById('navbar');
+      const aboutSection = document.getElementById('about');
+      const insights = document.getElementById('insights');
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            console.log(entry.isIntersecting)
+                  // Entering the 'about' section, apply blur
+                  nav.style.background = 'transparent';
+                  nav.style.backdropFilter = 'blur(10px) brightness(0.6)';
+                  nav.style.webkitBackdropFilter = 'blur(10px)';
+              } else {
+                console.log(entry.isIntersecting)
+                  // Leaving the 'about' section, remove blur
+                  nav.style.background = 'var(--primary-color)';
+                  nav.style.backdropFilter = 'blur(0)';
+                  nav.style.webkitBackdropFilter = 'blur(0)';
+              }
+          });
+      }, {
+        threshold: 0
+      });
+  
+      observer.observe(aboutSection);
+      observer.observe(insights);
+  </script>
+  
 
     <script>
       function toggleTech(section) {
