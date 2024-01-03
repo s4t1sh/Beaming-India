@@ -496,6 +496,7 @@
 }
 
 .clients{
+    width: 100%;
     display: inline-flex;
     padding: 8px 20px;
     justify-content: center;
