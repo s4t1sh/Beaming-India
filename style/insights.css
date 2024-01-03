@@ -16,6 +16,19 @@
     margin-left: 20px;
 }
 
+.com-btn{
+    padding: 6px 24px;
+    background: var(--primary-color);
+    color: #FFF;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 25px;
+    letter-spacing: 0.26px;
+    border-radius: 8px;
+    margin-left: 20px;
+}
+
 .title{
     color: var(--primary-color);
     font-size: 29px;
@@ -113,4 +126,16 @@
     letter-spacing: 0.26px;
     border-radius: 8px;
     margin-left: 20px;
+}
+
+@media (max-width: 1023px) {
+    .mid-title{
+        font-size: 35px;
+        line-height: normal;
+    }
+
+    .com-btn{
+        margin-left: 0;
+        margin-top: 16px;
+    }
 }
