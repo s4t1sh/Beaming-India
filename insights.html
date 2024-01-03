@@ -113,7 +113,7 @@
         </div>
       </div>
 
-      <div class="col-span-2 max-h-[100vh] overflow-scroll px-[15px] mt-6 lg:mt-0">
+      <div class="col-span-2 max-h-[100vh] overflow-scroll px-[15px] mt-6 lg:mt-0" id="scrollableDiv">
         <div class="flex flex-col gap-6">
           <p class="mid-title">
             How to Boost Engagement on Online Learning <br />
@@ -716,6 +716,23 @@
     <!-- footer ends -->
     <script src="js/menu.js"></script>
     <script src="js/insights.js"></script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+  var scrollableDiv = document.getElementById('scrollableDiv');
+  
+  // Detect when the scrollable div has reached the bottom
+  scrollableDiv.addEventListener('scroll', function () {
+    if (scrollableDiv.scrollTop + scrollableDiv.clientHeight >= scrollableDiv.scrollHeight) {
+      // Allow main scroll when the scrollable div reaches the bottom
+      document.body.style.overflow = 'auto';
+    } else {
+      // Prevent main scroll until the scrollable div reaches the bottom
+      document.body.style.overflow = 'hidden';
+    }
+  });
+});
+    </script>
   </body>
 </html>
 
