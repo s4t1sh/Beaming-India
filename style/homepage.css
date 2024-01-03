@@ -537,6 +537,14 @@ footer div p, footer div a,.address{
     display: none;
 }
 
+#cloud{
+    display: none;
+}
+
+#mobileapps{
+ display: none;
+}
+
 .logo-img{
     max-width: 200px;
     height: auto;

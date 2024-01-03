@@ -8,11 +8,17 @@
     font-family: 'Poppins', sans-serif;
 }
 
+::-webkit-scrollbar{
+    width: 0 !important;
+    background: transparent;
+  }
+  
 nav{
     background: var(--primary-color);
     position: sticky;
     top: 0%;
     z-index: 9;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .navbar{
