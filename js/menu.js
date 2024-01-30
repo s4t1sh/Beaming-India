@@ -16,4 +16,3 @@ document.getElementById('mobile-menu').addEventListener('click', function() {
     document.querySelector('.nav-menu').style.top = '-100vh';
     document.querySelector('.menu-toggle').classList.remove('menu-open');
   });
-  

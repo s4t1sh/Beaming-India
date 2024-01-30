@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.3.6 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -32,9 +32,11 @@
 4. Use the user's configured `sans` font-family by default.
 5. Use the user's configured `sans` font-feature-settings by default.
 6. Use the user's configured `sans` font-variation-settings by default.
+7. Disable tap highlights on iOS
 */
 
-html {
+html,
+:host {
   line-height: 1.5;
   /* 1 */
   -webkit-text-size-adjust: 100%;
@@ -44,12 +46,14 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
   font-variation-settings: normal;
   /* 6 */
+  -webkit-tap-highlight-color: transparent;
+  /* 7 */
 }
 
 /*
@@ -582,44 +586,58 @@ video {
   position: relative;
 }
 
+.left-1\/2 {
+  left: 50%;
+}
+
+.top-1\/2 {
+  top: 50%;
+}
+
 .top-\[23\%\] {
   top: 23%;
+}
+
+.top-\[\] {
+  top: ;
+}
+
+.top-\[42\] {
+  top: 42;
+}
+
+.top-\[42\%\] {
+  top: 42%;
+}
+
+.top-\[32\%\] {
+  top: 32%;
+}
+
+.left-\[44\%\] {
+  left: 44%;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
 
-.m-\[\] {
-  margin: ;
-}
-
-.m-\[10px\] {
-  margin: 10px;
-}
-
-.m-\[30px\] {
-  margin: 30px;
-}
-
-.m-\[20px\] {
-  margin: 20px;
-}
-
-.m-\[25px\] {
-  margin: 25px;
-}
-
-.m-\[px\] {
-  margin: px;
-}
-
-.m-\[28px\] {
-  margin: 28px;
-}
-
 .m-\[7px\] {
   margin: 7px;
+}
+
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.mx-\[7px\] {
+  margin-left: 7px;
+  margin-right: 7px;
 }
 
 .mx-auto {
@@ -627,19 +645,14 @@ video {
   margin-right: auto;
 }
 
+.my-12 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
-}
-
-.mx-\[\] {
-  margin-left: ;
-  margin-right: ;
-}
-
-.mx-\[7px\] {
-  margin-left: 7px;
-  margin-right: 7px;
 }
 
 .mb-2 {
@@ -652,10 +665,6 @@ video {
 
 .ms-40 {
   margin-inline-start: 10rem;
-}
-
-.ms-5 {
-  margin-inline-start: 1.25rem;
 }
 
 .mt-1 {
@@ -706,10 +715,6 @@ video {
   margin-top: 2.3rem;
 }
 
-.mt-3 {
-  margin-top: 0.75rem;
-}
-
 .flex {
   display: flex;
 }
@@ -728,10 +733,6 @@ video {
 
 .h-1 {
   height: 0.25rem;
-}
-
-.max-h-\[100vh\] {
-  max-height: 100vh;
 }
 
 .w-4\/5 {
@@ -762,10 +763,6 @@ video {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
 .grid-rows-2 {
   grid-template-rows: repeat(2, minmax(0, 1fr));
 }
@@ -782,12 +779,12 @@ video {
   justify-content: flex-end;
 }
 
-.justify-center {
-  justify-content: center;
-}
-
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
 }
 
 .gap-0 {
@@ -818,16 +815,16 @@ video {
   gap: 2rem;
 }
 
+.gap-12 {
+  gap: 3rem;
+}
+
+.gap-16 {
+  gap: 4rem;
+}
+
 .overflow-hidden {
   overflow: hidden;
-}
-
-.overflow-scroll {
-  overflow: scroll;
-}
-
-.scroll-smooth {
-  scroll-behavior: smooth;
 }
 
 .rounded-lg {
@@ -873,6 +870,11 @@ video {
   padding-right: 1rem;
 }
 
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .px-\[15px\] {
   padding-left: 15px;
   padding-right: 15px;
@@ -891,11 +893,6 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
 }
 
 .pb-24 {
@@ -938,8 +935,14 @@ video {
   text-align: center;
 }
 
-.font-bold {
-  font-weight: 700;
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-white {
@@ -982,9 +985,12 @@ video {
     margin: 0px;
   }
 
-  .lg\:my-8 {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+  .lg\:m-28 {
+    margin: 7rem;
+  }
+
+  .lg\:m-20 {
+    margin: 5rem;
   }
 
   .lg\:mx-0 {
@@ -992,8 +998,27 @@ video {
     margin-right: 0px;
   }
 
+  .lg\:my-8 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .lg\:my-20 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .lg\:mx-28 {
+    margin-left: 7rem;
+    margin-right: 7rem;
+  }
+
   .lg\:mb-0 {
     margin-bottom: 0px;
+  }
+
+  .lg\:ms-5 {
+    margin-inline-start: 1.25rem;
   }
 
   .lg\:mt-0 {
@@ -1018,10 +1043,6 @@ video {
 
   .lg\:mt-\[127px\] {
     margin-top: 127px;
-  }
-
-  .lg\:ms-5 {
-    margin-inline-start: 1.25rem;
   }
 
   .lg\:block {
@@ -1066,6 +1087,14 @@ video {
 
   .lg\:w-\[47\%\] {
     width: 47%;
+  }
+
+  .lg\:w-\[50\%\] {
+    width: 50%;
+  }
+
+  .lg\:w-\[60\%\] {
+    width: 60%;
   }
 
   .lg\:w-\[65\%\] {
@@ -1126,6 +1155,10 @@ video {
     justify-content: space-between;
   }
 
+  .lg\:gap-0 {
+    gap: 0px;
+  }
+
   .lg\:gap-24 {
     gap: 6rem;
   }
@@ -1138,20 +1171,17 @@ video {
     gap: 11rem;
   }
 
-  .lg\:gap-8 {
-    gap: 2rem;
-  }
-
   .lg\:gap-6 {
     gap: 1.5rem;
   }
 
-  .lg\:gap-0 {
-    gap: 0px;
+  .lg\:gap-8 {
+    gap: 2rem;
   }
 
-  .lg\:p-\[20px\] {
-    padding: 20px;
+  .lg\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .lg\:px-28 {
@@ -1189,17 +1219,16 @@ video {
     padding-bottom: 10px;
   }
 
-  .lg\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
   .lg\:pb-20 {
     padding-bottom: 5rem;
   }
 
   .lg\:pe-\[10rem\] {
     padding-inline-end: 10rem;
+  }
+
+  .lg\:pr-20 {
+    padding-right: 5rem;
   }
 
   .lg\:ps-16 {
@@ -1246,8 +1275,8 @@ video {
     padding-top: 2rem;
   }
 
-  .lg\:pr-20 {
-    padding-right: 5rem;
+  .lg\:text-left {
+    text-align: left;
   }
 
   .lg\:text-start {

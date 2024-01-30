@@ -1,7 +1,7 @@
 .title-btn{
     padding: 5px 12px;
     border-radius: 37px;
-    box-shadow: 0px 2px 57.6px 0px rgba(254, 193, 15, 0.70);
+    /* box-shadow: 0px 2px 57.6px 0px rgba(254, 193, 15, 0.70); */
     background: linear-gradient(to right, var(--secondary-color) 50%, white 50%);
     background-size: 200% 200%;
     transition: background-position 300ms ease-in-out, color 300ms ease-in-out, transform 300ms ease-in-out;
@@ -242,7 +242,7 @@
     display: inline-flex;
     align-items: flex-start;
     gap: 11.023px;
-    position: absolute;
+    /* position: absolute; */
     z-index: 1;
     bottom: 4%;
     left: 5%;
