@@ -1,976 +1,791 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="style/navbar.css" />
-    <link rel="stylesheet" href="style/homepage.css" />
-    <link rel="stylesheet" href="style/hamburger-menu.css" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/images/fav/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/images/fav/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="assets/images/fav/favicon-16x16.png"
-    />
-    <link rel="manifest" href="assets/images/fav/site.webmanifest" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-    />
-    <title>Beaming India | Illuminating Your Digital Future</title>
 
-    <style>
-      body {
-        background-color: var(--primary-color);
-        overflow-x: hidden;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- navbar starts -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style/navbar.css" />
+  <link rel="stylesheet" href="style/homepage.css" />
+  <link rel="stylesheet" href="style/hamburger-menu.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/fav/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/fav/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/fav/favicon-16x16.png" />
+  <link rel="manifest" href="assets/images/fav/site.webmanifest" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" />
+  <title>Beaming India | Illuminating Your Digital Future</title>
 
-    <nav
-      class="w-full flex lg:justify-between lg:px-[99px] lg:py-[10px] lg:items-center text-white"
-      id="navbar"
-    >
-      <div class="pt-3 lg:pt-0">
-        <img
-          src="assets/images/logo/logo.png"
-          alt=""
-          class="cursor-pointer logo-img"
-        />
+  <style>
+    body {
+      background-color: var(--primary-color);
+      overflow-x: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- navbar starts -->
+
+  <nav class="w-full flex lg:justify-between lg:px-[99px] lg:py-[10px] lg:items-center text-white" id="navbar">
+    <div class="pt-3 lg:pt-0">
+      <img src="assets/images/logo/logo.png" alt="" class="cursor-pointer logo-img" />
+    </div>
+    <div class="hidden lg:block">
+      <ul class="navbar menu-items">
+        <li class="active"><a href="#">Features</a></li>
+        <li><a href="insights.html">Insights</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#">Partnership</a></li>
+        <li><a href="#">services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="hidden lg:block">
+      <button class="book-btn">
+        <span>Book A Call-Free</span>
+        <img src="assets/images/logo/arrow.svg" alt="" />
+      </button>
+    </div>
+
+    <div class="container">
+      <div class="menu-toggle" id="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-      <div class="hidden lg:block">
-        <ul class="navbar menu-items">
-          <li class="active"><a href="#">Features</a></li>
-          <li><a href="insights.html">Insights</a></li>
+      <nav class="nav-menu">
+        <div class="close-btn" id="close-menu">&times;</div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
+          <li><a href="insights.html">Insights</a></li>
           <li><a href="#">Partnership</a></li>
-          <li><a href="#">services</a></li>
+          <li><a href="#">Services</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
-      </div>
-      <div class="hidden lg:block">
-        <button class="book-btn">
-          <span>Book A Call-Free</span>
-          <img src="assets/images/logo/arrow.svg" alt="" />
-        </button>
+      </nav>
+    </div>
+  </nav>
+
+  <!-- navbar ends -->
+
+  <!-- grid section starts -->
+  <div class="grid-section lg:py-20 py-10">
+    <div class="feature-section mx-auto">
+      <button class="title-btn">Features</button>
+      <p>Powerful Features for Stunning <span>Websites</span></p>
+      <span>The revolutionary website builder that empowers you to build stunning
+        websites effortlessly.</span>
+    </div>
+  </div>
+  <!-- grid section ends -->
+
+  <!-- Blue image section starts -->
+  <div>
+    <img src="assets/images/homepage/blue-image.png" alt="" class="w-4/5 mx-auto" />
+  </div>
+  <!-- Blue image section ends -->
+
+  <div class="about-section" id="about">
+    <!-- about us section starts -->
+    <div class="lg:pb-20">
+      <div class="title-section ps-4 lg:ps-16 lg:pt-14 pt-8 pb-8">
+        <button class="title-btn">About Us</button>
+        <p>
+          Why should you <br />
+          Hope with us?
+        </p>
       </div>
 
-      <div class="container">
-        <div class="menu-toggle" id="mobile-menu">
-          <span></span>
-          <span></span>
-          <span></span>
+      <div class="lg:grid lg:grid-cols-3 lg:gap-4 mb-8 lg:mb-0">
+        <div>
+          <img src="assets/images/homepage/office.png" alt="" class="lg:scale-110" />
         </div>
-        <nav class="nav-menu">
-          <div class="close-btn" id="close-menu">&times;</div>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="insights.html">Insights</a></li>
-            <li><a href="#">Partnership</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </nav>
-
-    <!-- navbar ends -->
-
-    <!-- grid section starts -->
-    <div class="grid-section lg:py-20 py-10">
-      <div class="feature-section mx-auto">
-        <button class="title-btn">Features</button>
-        <p>Powerful Features for Stunning <span>Websites</span></p>
-        <span
-          >The revolutionary website builder that empowers you to build stunning
-          websites effortlessly.</span
-        >
+        <div class="lg:col-span-2 lg:ps-20 lg:pe-[10rem]">
+          <div class="grid grid-rows-2 grid-flow-col gap-0 mt-8 lg:mt-0">
+            <div class="lg:ps-8 ps-4 border-r-2 border-r-[#E3E3E3]">
+              <img src="assets/images/homepage/🤜 🤛.png" alt="" />
+              <p class="about-section-headlines mt-2">Seamless Integration</p>
+              <p class="about-section-desc mt-1">
+                Our collaborative process seamlessly integrates with your
+                existing development team, ensuring a harmonious workflow.
+              </p>
+            </div>
+            <div class="lg:ps-8 pt-4 ps-4 lg:pt-8 border-r-2 border-r-[#E3E3E3] border-t-2 border-t-[#E3E3E3]">
+              <img src="assets/images/homepage/🎯.png" alt="" />
+              <p class="about-section-headlines mt-2">Expert Design</p>
+              <p class="about-section-desc mt-1">
+                Tap into the expertise of our seasoned designers who
+                specialize in enhancing user engagement and product appeal.
+              </p>
+            </div>
+            <div class="lg:ps-16 ps-4">
+              <img src="assets/images/homepage/🚀️.png" alt="" />
+              <p class="about-section-headlines mt-2">Speed to Market</p>
+              <p class="about-section-desc mt-1">
+                Accelerate your product's journey from concept to market with
+                our efficient design solutions.
+              </p>
+            </div>
+            <div class="lg:ps-16 pt-4 ps-4 lg:pt-8 border-t-2 border-t-[#E3E3E3]">
+              <img src="assets/images/homepage/🦾.png" alt="" />
+              <p class="about-section-headlines mt-2">
+                Affordable Excellence
+              </p>
+              <p class="about-section-desc mt-1">
+                Get top-tier design solutions without the heavy costs
+                associated with hiring a full-time senior designer.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <!-- grid section ends -->
+    <!-- about us section ends -->
 
-    <!-- Blue image section starts -->
+    <!-- services section starts -->
+    <div class="services-section uni-pad">
+      <div class="head-section">
+        <button class="title-btn">Services</button>
+        <p class="heading">What services we offer.</p>
+        <p class="about-section-desc text-center">
+          We provide full-scale branding and advertising services tailored to
+          your business needs. Whether you need a piece of content, social
+          media management, media placements, or a complete brand building
+          solution, we’ve got you covered. We help you navigate change.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-8 mt-12">
+        <div class="offers-section">
+          <div class="flex gap-2">
+            <img src="assets/images/homepage/icon-park-outline_web-page.svg" alt="" class="offer-icon" />
+            <span class="offer-heading">Product Design.</span>
+          </div>
+          <p class="offer-desc">
+            We help plan, conceptualise, design and execute stunning, scalable
+            user interfaces and experiences for SaaS, web and native apps.
+          </p>
+          <div class="flex lg:mt-8 mt-4 lg:ps-3">
+            <img src="assets/images/homepage/product-design1.png" alt="" class="product-design-img1 mt-8" />
+            <img src="assets/images/homepage/product-design2.png" alt="" class="product-design-img2" />
+          </div>
+        </div>
+
+        <div class="offers-section">
+          <div class="flex items-center gap-2">
+            <img src="assets/images/homepage/iconoir_design-nib.svg" alt="" class="offer-icon" />
+            <span class="offer-heading">Web Design.</span>
+          </div>
+          <p class="offer-desc">
+            Powerful, engaging, responsive websites enhance your brand and
+            beautifully showcase your product or service across all devices
+            and modes.
+          </p>
+          <img src="assets/images/homepage/web-design.png" alt="" class="mt-8" style="border-radius: 15.593px" />
+        </div>
+      </div>
+
+      <div class="grid lg:grid-cols-3 gap-10 mt-12">
+        <div class="offers-section">
+          <div class="flex gap-2">
+            <img src="assets/images/homepage/Group.svg" alt="" class="offer-icon" />
+            <span class="offer-heading">Prototyping.</span>
+          </div>
+          <p class="offer-desc">
+            Bring your ideas to life with high-fidelity prototyping powered by
+            conditional logic.
+          </p>
+          <div class="flex pt-8 flex-col relative lg:ps-4">
+            <img src="assets/images/homepage/prototyping1.png" alt="" class="prototyping-img1 ms-40" />
+            <img src="assets/images/homepage/prototyping2.png" alt=""
+              class="prototyping-img2 absolute lg:top-[82%] top-[23%]" />
+          </div>
+        </div>
+
+        <div class="offers-section">
+          <div class="flex items-center gap-2">
+            <img src="assets/images/homepage/Group (1).svg" alt="" class="offer-icon" />
+            <span class="offer-heading">Design System</span>
+          </div>
+          <p class="offer-desc mb-2">
+            Token-powered design systems for beautiful and consistent user
+            interfaces and experiences.
+          </p>
+          <img src="assets/images/homepage/deign-system.png" alt="" />
+        </div>
+
+        <div class="offers-section">
+          <div class="flex items-center gap-2">
+            <img src="assets/images/homepage/Vector.svg" alt="" class="offer-icon" />
+            <span class="offer-heading">Visual Identity</span>
+          </div>
+          <p class="offer-desc mb-2">
+            Professional and impactful visual identity design with optional
+            hosted guidelines.
+          </p>
+          <img src="assets/images/homepage/visual.png" alt="" />
+        </div>
+      </div>
+
+      <div class="grid lg:grid-cols-3 gap-10 mt-12">
+        <div class="offers-section">
+          <div class="flex gap-2">
+            <img src="assets/images/homepage/tdesign_code.svg" alt="" class="offer-icon" />
+            <span class="offer-heading">Web Dev.</span>
+          </div>
+          <p class="offer-desc">
+            We develop websites with gorgeous interactions using the latest
+            no-code platforms.
+          </p>
+        </div>
+
+        <div class="offers-section">
+          <div class="flex items-center gap-2">
+            <img src="assets/images/homepage/Group (1).svg" alt="" class="offer-icon" />
+            <span class="offer-heading">Funnel</span>
+          </div>
+          <p class="offer-desc">
+            Custom landing page to CRM funnels, that convert like crazy and
+            automate everything.
+          </p>
+        </div>
+
+        <div class="offers-section">
+          <div class="flex items-center gap-2">
+            <img src="assets/images/homepage/Vector.svg" alt="" class="offer-icon" />
+            <span class="offer-heading">UI Motion</span>
+          </div>
+          <p class="offer-desc">
+            Animated micro-interaction graphics, banners and adverts designed
+            to create delight.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid lg:grid-cols-3 gap-10 mt-12">
+        <div class="offers-section">
+          <div class="flex gap-2">
+            <img src="assets/images/homepage/tdesign_code.svg" alt="" class="offer-icon" />
+            <span class="offer-heading">Usablity Audit</span>
+          </div>
+          <p class="offer-desc">
+            A full product or website UX teardown with a report identifying
+            usability flaws.
+          </p>
+        </div>
+
+        <div class="offers-section">
+          <div class="flex items-center gap-2">
+            <img src="assets/images/homepage/Group (1).svg" alt="" class="offer-icon" />
+            <span class="offer-heading">Graphic Design</span>
+          </div>
+          <p class="offer-desc">
+            Professionally designed marketing graphics for all your online and
+            offline campaigns.
+          </p>
+        </div>
+
+        <div class="offers-section">
+          <div class="flex items-center gap-2">
+            <img src="assets/images/homepage/iconoir_design-nib.svg" alt="" class="offer-icon" />
+            <span class="offer-heading">Design Services</span>
+          </div>
+          <p class="offer-desc">
+            Are you looking for a design service not listed? Book a call, we
+            can probably help.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- services section ends -->
+  </div>
+
+  <!-- projects section starts -->
+  <div class="uni-pad">
+    <p class="work-title">
+      Our Selected Casetudy.<span style="color: var(--secondary-color)">.</span>
+    </p>
+    <div class="line"></div>
+
+    <div class="project-topics">
+      <button>UI/UX Design</button>
+      <button>Custom Software</button>
+      <button>Product Design</button>
+      <button>Product Design</button>
+      <button>Web Development</button>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-8 mt-16">
+      <div>
+        <div class="overflow-hidden relative border-raidus-15">
+          <a href="./projects/promptvault.html">
+            <img src="assets/images/homepage/work1.png" alt="" class="project-img" />
+          </a>
+
+          <!-- <div class="project-detail">
+              <button>Development</button>
+              <button>UI/UX Design</button>
+            </div> -->
+        </div>
+        <div class="flex justify-between mt-10">
+          <p class="project-title">Building the Future: Tescon Green</p>
+          <a href="./projects/promptvault.html" class="know-more flex items-center gap-3">
+            Know More
+            <span><img src="assets/images/homepage/Arrow 1.svg" alt="" /></span>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="overflow-hidden relative border-raidus-15">
+          <a href="./projects/grandeur.html">
+            <img src="assets/images/homepage/work2.png" alt="" class="project-img" />
+          </a>
+          <!-- <div class="project-detail">
+              <button>Development</button>
+              <button>UI/UX Design</button>
+            </div> -->
+        </div>
+        <div class="flex justify-between mt-[2.3rem]">
+          <p class="project-title">Building the Future: Tescon Green</p>
+          <a href="./projects/grandeur.html" class="know-more flex items-center gap-3">
+            Know More
+            <span><img src="assets/images/homepage/Arrow 1.svg" alt="" /></span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-8 mt-14">
+      <div>
+        <div class="overflow-hidden relative border-raidus-15">
+          <a href="./projects/meri-gaadi.html">
+            <img src="assets/images/homepage/work2.png" alt="" class="project-img" />
+          </a>
+          <!-- <div class="project-detail">
+              <button>Development</button>
+              <button>UI/UX Design</button>
+            </div> -->
+        </div>
+        <div class="flex justify-between mt-[1.8rem]">
+          <p class="project-title">Meri Gaadi</p>
+          <a href="./projects/meri-gaadi.html" class="know-more flex items-center gap-3">
+            Know More
+            <span><img src="assets/images/homepage/Arrow 1.svg" alt="" /></span>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="overflow-hidden relative border-raidus-15">
+          <a href="./projects/snehit.html">
+            <img src="assets/images/homepage/work2.png" alt="" class="project-img" />
+          </a>
+          <!-- <div class="project-detail">
+              <button>Development</button>
+              <button>UI/UX Design</button>
+            </div> -->
+        </div>
+        <div class="flex justify-between mt-[1.8rem]">
+          <p class="project-title">Snehit</p>
+          <a href="./projects/snehit.html" class="know-more flex items-center gap-3">
+            Know More
+            <span><img src="assets/images/homepage/Arrow 1.svg" alt="" /></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- projects section ends -->
+
+  <!-- scope of work starts -->
+  <div class="scope text-center">
+    <button class="title-btn mt-8">Scope</button>
+    <p class="scope-title mt-8">Our Scope Of Work</p>
+    <p class="scope-desc mt-8">
+      We provide full-scale branding and advertising services tailored to your
+      business needs. Whether you need a piece of content, social media
+      management, media placements, or a complete brand building solution,
+      we’ve got you covered. We help you navigate change.
+    </p>
+  </div>
+
+  <div class="text-center mt-16">
+    <div class="tech-title">
+      <span id="webBtn" onclick="toggleTech('webplatform')">Web Platform</span>
+      <span id="databaseBtn" onclick="toggleTech('database')">Database</span>
+      <span id="cloudBtn" onclick="toggleTech('cloud')">Cloud & Devops</span>
+      <span id="mobileAppBtn" onclick="toggleTech('mobileapps')">Mobile Apps</span>
+    </div>
+    <div class="h-1 mt-4" style="background: rgba(230, 230, 230, 0.1)"></div>
+  </div>
+
+  <!-- webplatform starts -->
+  <div class="webplatform mt-12 lg:px-[99px] px-4 pb-24" id="webplatform">
     <div>
-      <img
-        src="assets/images/homepage/blue-image.png"
-        alt=""
-        class="w-4/5 mx-auto"
-      />
-    </div>
-    <!-- Blue image section ends -->
-
-    <div class="about-section" id="about">
-      <!-- about us section starts -->
-      <div class="lg:pb-20">
-        <div class="title-section ps-4 lg:ps-16 lg:pt-14 pt-8 pb-8">
-          <button class="title-btn">About Us</button>
-          <p>
-            Why should you <br />
-            Hope with us?
-          </p>
-        </div>
-
-        <div class="lg:grid lg:grid-cols-3 lg:gap-4 mb-8 lg:mb-0">
-          <div>
-            <img
-              src="assets/images/homepage/office.png"
-              alt=""
-              class="lg:scale-110"
-            />
-          </div>
-          <div class="lg:col-span-2 lg:ps-20 lg:pe-[10rem]">
-            <div class="grid grid-rows-2 grid-flow-col gap-0 mt-8 lg:mt-0">
-              <div class="lg:ps-8 ps-4 border-r-2 border-r-[#E3E3E3]">
-                <img src="assets/images/homepage/🤜 🤛.png" alt="" />
-                <p class="about-section-headlines mt-2">Seamless Integration</p>
-                <p class="about-section-desc mt-1">
-                  Our collaborative process seamlessly integrates with your
-                  existing development team, ensuring a harmonious workflow.
-                </p>
-              </div>
-              <div
-                class="lg:ps-8 pt-4 ps-4 lg:pt-8 border-r-2 border-r-[#E3E3E3] border-t-2 border-t-[#E3E3E3]"
-              >
-                <img src="assets/images/homepage/🎯.png" alt="" />
-                <p class="about-section-headlines mt-2">Expert Design</p>
-                <p class="about-section-desc mt-1">
-                  Tap into the expertise of our seasoned designers who
-                  specialize in enhancing user engagement and product appeal.
-                </p>
-              </div>
-              <div class="lg:ps-16 ps-4">
-                <img src="assets/images/homepage/🚀️.png" alt="" />
-                <p class="about-section-headlines mt-2">Speed to Market</p>
-                <p class="about-section-desc mt-1">
-                  Accelerate your product's journey from concept to market with
-                  our efficient design solutions.
-                </p>
-              </div>
-              <div
-                class="lg:ps-16 pt-4 ps-4 lg:pt-8 border-t-2 border-t-[#E3E3E3]"
-              >
-                <img src="assets/images/homepage/🦾.png" alt="" />
-                <p class="about-section-headlines mt-2">
-                  Affordable Excellence
-                </p>
-                <p class="about-section-desc mt-1">
-                  Get top-tier design solutions without the heavy costs
-                  associated with hiring a full-time senior designer.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- about us section ends -->
-
-      <!-- services section starts -->
-      <div class="services-section uni-pad">
-        <div class="head-section">
-          <button class="title-btn">Services</button>
-          <p class="heading">What services we offer.</p>
-          <p class="about-section-desc text-center">
-            We provide full-scale branding and advertising services tailored to
-            your business needs. Whether you need a piece of content, social
-            media management, media placements, or a complete brand building
-            solution, we’ve got you covered. We help you navigate change.
-          </p>
-        </div>
-
-        <div class="grid lg:grid-cols-2 gap-8 mt-12">
-          <div class="offers-section">
-            <div class="flex gap-2">
-              <img
-                src="assets/images/homepage/icon-park-outline_web-page.svg"
-                alt=""
-                class="offer-icon"
-              />
-              <span class="offer-heading">Product Design.</span>
-            </div>
-            <p class="offer-desc">
-              We help plan, conceptualise, design and execute stunning, scalable
-              user interfaces and experiences for SaaS, web and native apps.
-            </p>
-            <div class="flex lg:mt-8 mt-4 lg:ps-3">
-              <img
-                src="assets/images/homepage/product-design1.png"
-                alt=""
-                class="product-design-img1 mt-8"
-              />
-              <img
-                src="assets/images/homepage/product-design2.png"
-                alt=""
-                class="product-design-img2"
-              />
-            </div>
-          </div>
-
-          <div class="offers-section">
-            <div class="flex items-center gap-2">
-              <img
-                src="assets/images/homepage/iconoir_design-nib.svg"
-                alt=""
-                class="offer-icon"
-              />
-              <span class="offer-heading">Web Design.</span>
-            </div>
-            <p class="offer-desc">
-              Powerful, engaging, responsive websites enhance your brand and
-              beautifully showcase your product or service across all devices
-              and modes.
-            </p>
-            <img
-              src="assets/images/homepage/web-design.png"
-              alt=""
-              class="mt-8"
-              style="border-radius: 15.593px"
-            />
-          </div>
-        </div>
-
-        <div class="grid lg:grid-cols-3 gap-10 mt-12">
-          <div class="offers-section">
-            <div class="flex gap-2">
-              <img
-                src="assets/images/homepage/Group.svg"
-                alt=""
-                class="offer-icon"
-              />
-              <span class="offer-heading">Prototyping.</span>
-            </div>
-            <p class="offer-desc">
-              Bring your ideas to life with high-fidelity prototyping powered by
-              conditional logic.
-            </p>
-            <div class="flex pt-8 flex-col relative lg:ps-4">
-              <img
-                src="assets/images/homepage/prototyping1.png"
-                alt=""
-                class="prototyping-img1 ms-40"
-              />
-              <img
-                src="assets/images/homepage/prototyping2.png"
-                alt=""
-                class="prototyping-img2 absolute lg:top-[82%] top-[23%]"
-              />
-            </div>
-          </div>
-
-          <div class="offers-section">
-            <div class="flex items-center gap-2">
-              <img
-                src="assets/images/homepage/Group (1).svg"
-                alt=""
-                class="offer-icon"
-              />
-              <span class="offer-heading">Design System</span>
-            </div>
-            <p class="offer-desc mb-2">
-              Token-powered design systems for beautiful and consistent user
-              interfaces and experiences.
-            </p>
-            <img src="assets/images/homepage/deign-system.png" alt="" />
-          </div>
-
-          <div class="offers-section">
-            <div class="flex items-center gap-2">
-              <img
-                src="assets/images/homepage/Vector.svg"
-                alt=""
-                class="offer-icon"
-              />
-              <span class="offer-heading">Visual Identity</span>
-            </div>
-            <p class="offer-desc mb-2">
-              Professional and impactful visual identity design with optional
-              hosted guidelines.
-            </p>
-            <img src="assets/images/homepage/visual.png" alt="" />
-          </div>
-        </div>
-
-        <div class="grid lg:grid-cols-3 gap-10 mt-12">
-          <div class="offers-section">
-            <div class="flex gap-2">
-              <img
-                src="assets/images/homepage/tdesign_code.svg"
-                alt=""
-                class="offer-icon"
-              />
-              <span class="offer-heading">Web Dev.</span>
-            </div>
-            <p class="offer-desc">
-              We develop websites with gorgeous interactions using the latest
-              no-code platforms.
-            </p>
-          </div>
-
-          <div class="offers-section">
-            <div class="flex items-center gap-2">
-              <img
-                src="assets/images/homepage/Group (1).svg"
-                alt=""
-                class="offer-icon"
-              />
-              <span class="offer-heading">Funnel</span>
-            </div>
-            <p class="offer-desc">
-              Custom landing page to CRM funnels, that convert like crazy and
-              automate everything.
-            </p>
-          </div>
-
-          <div class="offers-section">
-            <div class="flex items-center gap-2">
-              <img
-                src="assets/images/homepage/Vector.svg"
-                alt=""
-                class="offer-icon"
-              />
-              <span class="offer-heading">UI Motion</span>
-            </div>
-            <p class="offer-desc">
-              Animated micro-interaction graphics, banners and adverts designed
-              to create delight.
-            </p>
-          </div>
-        </div>
-
-        <div class="grid lg:grid-cols-3 gap-10 mt-12">
-          <div class="offers-section">
-            <div class="flex gap-2">
-              <img
-                src="assets/images/homepage/tdesign_code.svg"
-                alt=""
-                class="offer-icon"
-              />
-              <span class="offer-heading">Usablity Audit</span>
-            </div>
-            <p class="offer-desc">
-              A full product or website UX teardown with a report identifying
-              usability flaws.
-            </p>
-          </div>
-
-          <div class="offers-section">
-            <div class="flex items-center gap-2">
-              <img
-                src="assets/images/homepage/Group (1).svg"
-                alt=""
-                class="offer-icon"
-              />
-              <span class="offer-heading">Graphic Design</span>
-            </div>
-            <p class="offer-desc">
-              Professionally designed marketing graphics for all your online and
-              offline campaigns.
-            </p>
-          </div>
-
-          <div class="offers-section">
-            <div class="flex items-center gap-2">
-              <img
-                src="assets/images/homepage/iconoir_design-nib.svg"
-                alt=""
-                class="offer-icon"
-              />
-              <span class="offer-heading">Design Services</span>
-            </div>
-            <p class="offer-desc">
-              Are you looking for a design service not listed? Book a call, we
-              can probably help.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- services section ends -->
+      <span>Front End</span>
+      <!-- <span class="ps-6">33 Developers</span> -->
     </div>
 
-    <!-- projects section starts -->
-    <div class="uni-pad">
-      <p class="work-title">
-        Our Works<span style="color: var(--secondary-color)">.</span>
-      </p>
-      <div class="line"></div>
-
-      <div class="project-topics">
-        <button>UI/UX Design</button>
-        <button>Custom Software</button>
-        <button>Product Design</button>
-        <button>Product Design</button>
-        <button>Web Development</button>
+    <div class="lg:grid lg:grid-rows-2 lg:grid-flow-col lg:gap-8 techbox lg:w-full">
+      <div class="graphql tech-border">
+        <img src="assets/images/homepage/webplatform-icons/graphql.svg" alt="" />
+        <span>[GRAPH QL]</span>
+      </div>
+      <div class="graphql tech-border">
+        <img src="assets/images/homepage/webplatform-icons/apollo.svg" alt="" />
+        <span>[APOLLO CLIENT]</span>
       </div>
 
-      <div class="grid lg:grid-cols-2 gap-8 mt-16">
-        <div>
-          <div class="overflow-hidden relative border-raidus-15">
-            <a href="../dist/projects/promptvault.html">
-              <img
-                src="assets/images/homepage/work1.png"
-                alt=""
-                class="project-img"
-              />
-            </a>
+      <div class="graphql tech-border">
+        <img src="assets/images/homepage/webplatform-icons/ant.svg" alt="" />
+        <span>[ANT DESIGN]</span>
+      </div>
+      <div class="graphql tech-border">
+        <img src="assets/images/homepage/webplatform-icons/react.svg" alt="" />
+        <span>[REACT.JS]</span>
+      </div>
+      <div class="graphql tech-border">
+        <img src="assets/images/homepage/webplatform-icons/mui.svg" alt="" />
+        <span>[MATERIAL UI]</span>
+      </div>
+      <div class="graphql tech-border">
+        <img src="assets/images/homepage/webplatform-icons/rest.svg" alt="" />
+        <span>[REST API]</span>
+      </div>
+      <div class="graphql tech-border">
+        <img src="assets/images/homepage/webplatform-icons/reactform.svg" alt="" />
+        <span>[REACT HOOK]</span>
+      </div>
+      <div class="graphql tech-border">
+        <img src="assets/images/homepage/webplatform-icons/next.svg" alt="" />
+        <span>[NEXT. JS]</span>
+      </div>
+    </div>
 
-            <!-- <div class="project-detail">
-              <button>Development</button>
-              <button>UI/UX Design</button>
-            </div> -->
-          </div>
-          <div class="flex justify-between mt-10">
-            <p class="project-title">Building the Future: Tescon Green</p>
-            <a
-              href="./projects/promptvault.html"
-              class="know-more flex items-center gap-3"
-            >
-              Know More
-              <span
-                ><img src="assets/images/homepage/Arrow 1.svg" alt=""
-              /></span>
-            </a>
-          </div>
-        </div>
-        <div>
-          <div class="overflow-hidden relative border-raidus-15">
-            <a href="./projects/grandeur.html">
-              <img
-                src="assets/images/homepage/work2.png"
-                alt=""
-                class="project-img"
-              />
-            </a>
-            <!-- <div class="project-detail">
-              <button>Development</button>
-              <button>UI/UX Design</button>
-            </div> -->
-          </div>
-          <div class="flex justify-between mt-[2.3rem]">
-            <p class="project-title">Building the Future: Tescon Green</p>
-            <a
-              href="./projects/grandeur.html"
-              class="know-more flex items-center gap-3"
-            >
-              Know More
-              <span
-                ><img src="assets/images/homepage/Arrow 1.svg" alt=""
-              /></span>
-            </a>
-          </div>
-        </div>
+    <div class="mt-8">
+      <span>Backend End</span>
+      <!-- <span class="ps-6">33 Developers</span> -->
+    </div>
+
+    <div class="lg:grid lg:grid-rows-2 lg:grid-flow-col lg:gap-8 techbox lg:w-full">
+      <div class="graphql tech-border">
+        <img src="assets/images/homepage/webplatform-icons/rest.svg" alt="" />
+        <span>[REST API]</span>
       </div>
 
-      <div class="grid lg:grid-cols-2 gap-8 mt-14">
-        <div>
-          <div class="overflow-hidden relative border-raidus-15">
-            <a href="./projects/avighna.html">
-            <img
-              src="assets/images/homepage/work2.png"
-              alt=""
-              class="project-img"
-            />
-          </a>
-            <!-- <div class="project-detail">
-              <button>Development</button>
-              <button>UI/UX Design</button>
-            </div> -->
+      <div class="graphql tech-border">
+        <img src="assets/images/homepage/webplatform-icons/java.svg" alt="" />
+        <span>[JAVA]</span>
+      </div>
+      <div class="graphql tech-border">
+        <img src="assets/images/homepage/webplatform-icons/net.svg" alt="" />
+        <span>[.NET]</span>
+      </div>
+      <div class="graphql tech-border">
+        <img src="assets/images/homepage/webplatform-icons/node.svg" alt="" />
+        <span>[NODE.JS]</span>
+      </div>
+      <div class="graphql tech-border">
+        <img src="assets/images/homepage/webplatform-icons/laravel.svg" alt="" />
+        <span>[LARAVEL]</span>
+      </div>
+      <div class="graphql tech-border">
+        <img src="assets/images/homepage/webplatform-icons/php.svg" alt="" />
+        <span>[PHP]</span>
+      </div>
+      <div class="graphql tech-border">
+        <img src="assets/images/homepage/webplatform-icons/spring.svg" alt="" />
+        <span>[SPRING]</span>
+      </div>
+    </div>
+  </div>
+  <!-- webplatform ends -->
+
+  <!-- database starts -->
+  <div class="database mt-12 lg:px-[99px] px-4 pb-24" id="database">
+    <div>
+      <span>DATABASE</span>
+      <!-- <span class="ps-6">33 Developers</span> -->
+    </div>
+
+    <div class="lg:grid lg:grid-rows-2 lg:grid-cols-4 lg:gap-8 techbox lg:w-full">
+      <div class="graphql tech-border">
+        <img src="assets/images/homepage/databse-icons/aws.svg" alt="" />
+        <span>[AWS RDS]</span>
+      </div>
+      <div class="graphql tech-border">
+        <img src="assets/images/homepage/databse-icons/mysql.svg" alt="" />
+        <span>[MYSQL]</span>
+      </div>
+      <div class="graphql tech-border">
+        <img src="assets/images/homepage/databse-icons/mongodb.svg" alt="" />
+        <span>[MONGO DB]</span>
+      </div>
+      <div class="graphql tech-border">
+        <img src="assets/images/homepage/databse-icons/postgre.svg" alt="" />
+        <span>[POSTGRESQL]</span>
+      </div>
+      <div class="graphql tech-border">
+        <img src="assets/images/homepage/databse-icons/redis.svg" alt="" />
+        <span>[REDIS]</span>
+      </div>
+      <div class="graphql tech-border">
+        <img src="assets/images/homepage/databse-icons/elastic.svg" alt="" />
+        <span>[ELASTIC SEARCH]</span>
+      </div>
+    </div>
+  </div>
+  <!-- database ends -->
+
+  <!-- cloud starts -->
+  <div class="database mt-12 lg:px-[99px] px-4 pb-24" id="cloud">
+    <div>
+      <span>Devops</span>
+    </div>
+
+    <div class="lg:grid lg:grid-cols-4 lg:gap-8 techbox lg:w-full">
+      <div class="graphql tech-border">
+        <img src="assets/images/homepage/cloud-icon/mgix.svg" alt="" />
+        <span>[NGINX]</span>
+      </div>
+      <div class="graphql tech-border">
+        <img src="assets/images/homepage/cloud-icon/docker.svg" alt="" />
+        <span>[DOCKER]</span>
+      </div>
+      <div class="graphql tech-border">
+        <img src="assets/images/homepage/cloud-icon/kubernets.svg" alt="" />
+        <span>[KUBERNETES]</span>
+      </div>
+    </div>
+
+    <div class="mt-8">
+      <span>Cloud</span>
+      <!-- <span class="ps-6">33 Developers</span> -->
+    </div>
+
+    <div class="lg:grid lg:grid-rows-2 lg:grid-cols-4 lg:gap-8 techbox lg:w-full">
+      <div class="graphql tech-border">
+        <img src="assets/images/homepage/cloud-icon/hetzner.svg" alt="" />
+        <span>[HETZNER]</span>
+      </div>
+
+      <div class="graphql tech-border">
+        <img src="assets/images/homepage/cloud-icon/digitalocean.svg" alt="" />
+        <span>[DIGITAL OCEAN]</span>
+      </div>
+      <div class="graphql tech-border">
+        <img src="assets/images/homepage/cloud-icon/azure.svg" alt="" />
+        <span>[MICROSOFT AZURE]</span>
+      </div>
+      <div class="graphql tech-border">
+        <img src="assets/images/homepage/cloud-icon/google.svg" alt="" />
+        <span>[GOOGLE CLOUD]</span>
+      </div>
+      <div class="graphql tech-border">
+        <img src="assets/images/homepage/cloud-icon/aws.svg" alt="" />
+        <span>[AWS]</span>
+      </div>
+    </div>
+  </div>
+  <!-- cloud ends -->
+
+  <!-- Apps starts -->
+  <div class="database mt-12 lg:px-[99px] px-4 pb-24" id="mobileapps">
+    <div>
+      <span>Flutter</span>
+    </div>
+
+    <div class="lg:grid lg:grid-cols-4 lg:gap-8 techbox lg:w-full">
+      <div class="graphql tech-border">
+        <img src="assets/images/homepage/app-icons/rx-dart.svg" alt="" />
+        <span>[RX DART DEVELOPMENT SERVICE]</span>
+      </div>
+      <div class="graphql tech-border">
+        <img src="assets/images/homepage/app-icons/dds.svg" alt="" />
+        <span>[DART DEVELOPMENT SERVICES]</span>
+      </div>
+      <div class="graphql tech-border">
+        <img src="assets/images/homepage/app-icons/bds.svg" alt="" />
+        <span>[BLOC DEVELOPMENT SERIVICE]</span>
+      </div>
+      <div class="graphql tech-border">
+        <img src="assets/images/homepage/app-icons/rds.svg" alt="" />
+        <span>[REST DEVELOPMENT SERVICE]</span>
+      </div>
+    </div>
+
+    <div class="mt-8">
+      <span>iOS</span>
+      <!-- <span class="ps-6">33 Developers</span> -->
+    </div>
+
+    <div class="lg:grid lg:grid-rows-2 lg:grid-cols-4 lg:gap-8 techbox lg:w-full">
+      <div class="graphql tech-border">
+        <img src="assets/images/homepage/app-icons/coredata.svg" alt="" />
+        <span>[CORE DATA]</span>
+      </div>
+
+      <div class="graphql tech-border">
+        <img src="assets/images/homepage/app-icons/almofire.svg" alt="" />
+        <span>[REST (ALMOFIRE)]</span>
+      </div>
+      <div class="graphql tech-border">
+        <img src="assets/images/homepage/app-icons/uikit.svg" alt="" />
+        <span>[UI KIT]</span>
+      </div>
+      <div class="graphql tech-border">
+        <img src="assets/images/homepage/app-icons/mvvm.svg" alt="" />
+        <span>[MVVM]</span>
+      </div>
+      <div class="graphql tech-border">
+        <img src="assets/images/homepage/app-icons/swift.svg" alt="" />
+        <span>[SWIFT]</span>
+      </div>
+      <div class="graphql tech-border">
+        <img src="assets/images/homepage/app-icons/rx-swift.svg" alt="" />
+        <span>[RX SWIFT]</span>
+      </div>
+      <div class="graphql tech-border">
+        <img src="assets/images/homepage/app-icons/combine.svg" alt="" />
+        <span>[COMBINE]</span>
+      </div>
+    </div>
+
+    <div class="mt-8">
+      <span>Andriod</span>
+      <!-- <span class="ps-6">33 Developers</span> -->
+    </div>
+
+    <div class="lg:grid lg:grid-rows-2 lg:grid-cols-4 lg:gap-8 techbox lg:w-full">
+      <div class="graphql tech-border">
+        <img src="assets/images/homepage/app-icons/compose.svg" alt="" />
+        <span>[COMPOSE]</span>
+      </div>
+
+      <div class="graphql tech-border">
+        <img src="assets/images/homepage/app-icons/mvvm.svg" alt="" />
+        <span>[MVVM]</span>
+      </div>
+      <div class="graphql tech-border">
+        <img src="assets/images/homepage/app-icons/rx-java.svg" alt="" />
+        <span>[RX JAVA]</span>
+      </div>
+      <div class="graphql tech-border">
+        <img src="assets/images/homepage/app-icons/retro.svg" alt="" />
+        <span>[RETRO FIT]</span>
+      </div>
+      <div class="graphql tech-border">
+        <img src="assets/images/homepage/app-icons/jetpack.svg" alt="" />
+        <span>[JETPACK COMPOSE]</span>
+      </div>
+      <div class="graphql tech-border">
+        <img src="assets/images/homepage/app-icons/kotlin.svg" alt="" />
+        <span>[KOTLIN]</span>
+      </div>
+      <div class="graphql tech-border">
+        <img src="assets/images/homepage/app-icons/java.svg" alt="" />
+        <span>[JAVA]</span>
+      </div>
+    </div>
+
+    <div class="mt-8">
+      <span>Cross Platform</span>
+      <!-- <span class="ps-6">33 Developers</span> -->
+    </div>
+
+    <div class="lg:grid lg:grid-rows-2 lg:grid-cols-4 lg:gap-8 techbox lg:w-full">
+      <div class="graphql tech-border">
+        <img src="assets/images/homepage/app-icons/ml.svg" alt="" />
+        <span>[ML KIT DEVELOPMENT SERVICES]</span>
+      </div>
+
+      <div class="graphql tech-border">
+        <img src="assets/images/homepage/app-icons/coreml.svg" alt="" />
+        <span>[COREML DEVELOPMENT SERVICES]</span>
+      </div>
+      <div class="graphql tech-border">
+        <img src="assets/images/homepage/app-icons/firebase.svg" alt="" />
+        <span>[FIREBASE DEVELOPMENT SERVICE]</span>
+      </div>
+    </div>
+  </div>
+  <!-- Apps ends -->
+
+  <!-- scope of work ends -->
+
+  <!-- Insights starts -->
+  <div class="insights" id="insights">
+    <div class="insights-heading">
+      Insights<span style="color: var(--secondary-color)">.</span>
+    </div>
+    <div class="insights-topics">
+      <button>Education</button>
+      <button>Fintech</button>
+      <button>Transportation</button>
+      <button>Health Care</button>
+      <button>Whitepapers</button>
+    </div>
+
+    <div class="grid lg:grid-rows-1 grid-flow-col gap-10 mt-4 lg:mt-8">
+      <div class="grid lg:grid-cols-4 lg:gap-4 gap-8">
+        <div class="card">
+          <div class="overflow-hidden">
+            <img src="assets/images/homepage/insights.png" alt="" />
           </div>
-          <div class="flex justify-between mt-[1.8rem]">
-            <p class="project-title">Building the Future: Tescon Green</p>
-            <a href="./projects/avighna.html" class="know-more flex items-center gap-3">
-              Know More
-              <span
-                ><img src="assets/images/homepage/Arrow 1.svg" alt=""
-              /></span>
-            </a>
+          <div class="lg:px-7 lg:py-6 p-[0.7rem]">
+            <p class="date">August 5, 2023</p>
+            <p class="mt-2 card-desc">
+              Navigating the Digital Frontier: How Our IT Company Empowers
+              Businesses for the Future
+            </p>
           </div>
         </div>
-        <div>
-          <div class="overflow-hidden relative border-raidus-15">
-            <a href="./projects/snehit.html">
-            <img
-              src="assets/images/homepage/work2.png"
-              alt=""
-              class="project-img"
-            />
-          </a>
-            <!-- <div class="project-detail">
-              <button>Development</button>
-              <button>UI/UX Design</button>
-            </div> -->
+
+        <div class="card">
+          <div class="overflow-hidden">
+            <img src="assets/images/homepage/blog2.png" alt="" />
           </div>
-          <div class="flex justify-between mt-[1.8rem]">
-            <p class="project-title">Building the Future: Tescon Green</p>
-            <a href="./projects/snehit.html" class="know-more flex items-center gap-3">
-              Know More
-              <span
-                ><img src="assets/images/homepage/Arrow 1.svg" alt=""
-              /></span>
-            </a>
+          <div class="lg:px-7 lg:py-6 p-[0.7rem]">
+            <p class="date">August 5, 2023</p>
+            <p class="mt-2 card-desc">
+              Navigating the Digital Frontier: How Our IT Company Empowers
+              Businesses for the Future
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="overflow-hidden">
+            <img src="assets/images/homepage/blog3.png" alt="" />
+          </div>
+          <div class="lg:px-7 lg:py-6 p-[0.7rem]">
+            <p class="date">August 5, 2023</p>
+            <p class="mt-2 card-desc">
+              Navigating the Digital Frontier: How Our IT Company Empowers
+              Businesses for the Future
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="overflow-hidden">
+            <img src="assets/images/homepage/insights.png" alt="" />
+          </div>
+          <div class="lg:px-7 lg:py-6 p-[0.7rem]">
+            <p class="date">August 5, 2023</p>
+            <p class="mt-2 card-desc">
+              Navigating the Digital Frontier: How Our IT Company Empowers
+              Businesses for the Future
+            </p>
           </div>
         </div>
       </div>
     </div>
-    <!-- projects section ends -->
-
-    <!-- scope of work starts -->
-    <div class="scope text-center">
-      <button class="title-btn mt-8">Scope</button>
-      <p class="scope-title mt-8">Our Scope Of Work</p>
-      <p class="scope-desc mt-8">
-        We provide full-scale branding and advertising services tailored to your
-        business needs. Whether you need a piece of content, social media
-        management, media placements, or a complete brand building solution,
-        we’ve got you covered. We help you navigate change.
-      </p>
-    </div>
-
-    <div class="text-center mt-16">
-      <div class="tech-title">
-        <span id="webBtn" onclick="toggleTech('webplatform')"
-          >Web Platform</span
-        >
-        <span id="databaseBtn" onclick="toggleTech('database')">Database</span>
-        <span id="cloudBtn" onclick="toggleTech('cloud')">Cloud & Devops</span>
-        <span id="mobileAppBtn" onclick="toggleTech('mobileapps')"
-          >Mobile Apps</span
-        >
-      </div>
-      <div class="h-1 mt-4" style="background: rgba(230, 230, 230, 0.1)"></div>
-    </div>
-
-    <!-- webplatform starts -->
-    <div class="webplatform mt-12 lg:px-[99px] px-4 pb-24" id="webplatform">
-      <div>
-        <span>Front End</span>
-        <!-- <span class="ps-6">33 Developers</span> -->
-      </div>
-
-      <div
-        class="lg:grid lg:grid-rows-2 lg:grid-flow-col lg:gap-8 techbox lg:w-full"
-      >
-        <div class="graphql tech-border">
-          <img
-            src="assets/images/homepage/webplatform-icons/graphql.svg"
-            alt=""
-          />
-          <span>[GRAPH QL]</span>
-        </div>
-        <div class="graphql tech-border">
-          <img
-            src="assets/images/homepage/webplatform-icons/apollo.svg"
-            alt=""
-          />
-          <span>[APOLLO CLIENT]</span>
-        </div>
-
-        <div class="graphql tech-border">
-          <img src="assets/images/homepage/webplatform-icons/ant.svg" alt="" />
-          <span>[ANT DESIGN]</span>
-        </div>
-        <div class="graphql tech-border">
-          <img
-            src="assets/images/homepage/webplatform-icons/react.svg"
-            alt=""
-          />
-          <span>[REACT.JS]</span>
-        </div>
-        <div class="graphql tech-border">
-          <img src="assets/images/homepage/webplatform-icons/mui.svg" alt="" />
-          <span>[MATERIAL UI]</span>
-        </div>
-        <div class="graphql tech-border">
-          <img src="assets/images/homepage/webplatform-icons/rest.svg" alt="" />
-          <span>[REST API]</span>
-        </div>
-        <div class="graphql tech-border">
-          <img
-            src="assets/images/homepage/webplatform-icons/reactform.svg"
-            alt=""
-          />
-          <span>[REACT HOOK]</span>
-        </div>
-        <div class="graphql tech-border">
-          <img src="assets/images/homepage/webplatform-icons/next.svg" alt="" />
-          <span>[NEXT. JS]</span>
-        </div>
-      </div>
-
-      <div class="mt-8">
-        <span>Backend End</span>
-        <!-- <span class="ps-6">33 Developers</span> -->
-      </div>
-
-      <div
-        class="lg:grid lg:grid-rows-2 lg:grid-flow-col lg:gap-8 techbox lg:w-full"
-      >
-        <div class="graphql tech-border">
-          <img src="assets/images/homepage/webplatform-icons/rest.svg" alt="" />
-          <span>[REST API]</span>
-        </div>
-
-        <div class="graphql tech-border">
-          <img src="assets/images/homepage/webplatform-icons/java.svg" alt="" />
-          <span>[JAVA]</span>
-        </div>
-        <div class="graphql tech-border">
-          <img src="assets/images/homepage/webplatform-icons/net.svg" alt="" />
-          <span>[.NET]</span>
-        </div>
-        <div class="graphql tech-border">
-          <img src="assets/images/homepage/webplatform-icons/node.svg" alt="" />
-          <span>[NODE.JS]</span>
-        </div>
-        <div class="graphql tech-border">
-          <img
-            src="assets/images/homepage/webplatform-icons/laravel.svg"
-            alt=""
-          />
-          <span>[LARAVEL]</span>
-        </div>
-        <div class="graphql tech-border">
-          <img src="assets/images/homepage/webplatform-icons/php.svg" alt="" />
-          <span>[PHP]</span>
-        </div>
-        <div class="graphql tech-border">
-          <img
-            src="assets/images/homepage/webplatform-icons/spring.svg"
-            alt=""
-          />
-          <span>[SPRING]</span>
-        </div>
-      </div>
-    </div>
-    <!-- webplatform ends -->
-
-    <!-- database starts -->
-    <div class="database mt-12 lg:px-[99px] px-4 pb-24" id="database">
-      <div>
-        <span>DATABASE</span>
-        <!-- <span class="ps-6">33 Developers</span> -->
-      </div>
-
-      <div
-        class="lg:grid lg:grid-rows-2 lg:grid-cols-4 lg:gap-8 techbox lg:w-full"
-      >
-        <div class="graphql tech-border">
-          <img src="assets/images/homepage/databse-icons/aws.svg" alt="" />
-          <span>[AWS RDS]</span>
-        </div>
-        <div class="graphql tech-border">
-          <img src="assets/images/homepage/databse-icons/mysql.svg" alt="" />
-          <span>[MYSQL]</span>
-        </div>
-        <div class="graphql tech-border">
-          <img src="assets/images/homepage/databse-icons/mongodb.svg" alt="" />
-          <span>[MONGO DB]</span>
-        </div>
-        <div class="graphql tech-border">
-          <img src="assets/images/homepage/databse-icons/postgre.svg" alt="" />
-          <span>[POSTGRESQL]</span>
-        </div>
-        <div class="graphql tech-border">
-          <img src="assets/images/homepage/databse-icons/redis.svg" alt="" />
-          <span>[REDIS]</span>
-        </div>
-        <div class="graphql tech-border">
-          <img src="assets/images/homepage/databse-icons/elastic.svg" alt="" />
-          <span>[ELASTIC SEARCH]</span>
-        </div>
-      </div>
-    </div>
-    <!-- database ends -->
-
-    <!-- cloud starts -->
-    <div class="database mt-12 lg:px-[99px] px-4 pb-24" id="cloud">
-      <div>
-        <span>Devops</span>
-      </div>
-
-      <div class="lg:grid lg:grid-cols-4 lg:gap-8 techbox lg:w-full">
-        <div class="graphql tech-border">
-          <img src="assets/images/homepage/cloud-icon/mgix.svg" alt="" />
-          <span>[NGINX]</span>
-        </div>
-        <div class="graphql tech-border">
-          <img src="assets/images/homepage/cloud-icon/docker.svg" alt="" />
-          <span>[DOCKER]</span>
-        </div>
-        <div class="graphql tech-border">
-          <img src="assets/images/homepage/cloud-icon/kubernets.svg" alt="" />
-          <span>[KUBERNETES]</span>
-        </div>
-      </div>
-
-      <div class="mt-8">
-        <span>Cloud</span>
-        <!-- <span class="ps-6">33 Developers</span> -->
-      </div>
-
-      <div
-        class="lg:grid lg:grid-rows-2 lg:grid-cols-4 lg:gap-8 techbox lg:w-full"
-      >
-        <div class="graphql tech-border">
-          <img src="assets/images/homepage/cloud-icon/hetzner.svg" alt="" />
-          <span>[HETZNER]</span>
-        </div>
-
-        <div class="graphql tech-border">
-          <img
-            src="assets/images/homepage/cloud-icon/digitalocean.svg"
-            alt=""
-          />
-          <span>[DIGITAL OCEAN]</span>
-        </div>
-        <div class="graphql tech-border">
-          <img src="assets/images/homepage/cloud-icon/azure.svg" alt="" />
-          <span>[MICROSOFT AZURE]</span>
-        </div>
-        <div class="graphql tech-border">
-          <img src="assets/images/homepage/cloud-icon/google.svg" alt="" />
-          <span>[GOOGLE CLOUD]</span>
-        </div>
-        <div class="graphql tech-border">
-          <img src="assets/images/homepage/cloud-icon/aws.svg" alt="" />
-          <span>[AWS]</span>
-        </div>
-      </div>
-    </div>
-    <!-- cloud ends -->
-
-    <!-- Apps starts -->
-    <div class="database mt-12 lg:px-[99px] px-4 pb-24" id="mobileapps">
-      <div>
-        <span>Flutter</span>
-      </div>
-
-      <div class="lg:grid lg:grid-cols-4 lg:gap-8 techbox lg:w-full">
-        <div class="graphql tech-border">
-          <img src="assets/images/homepage/app-icons/rx-dart.svg" alt="" />
-          <span>[RX DART DEVELOPMENT SERVICE]</span>
-        </div>
-        <div class="graphql tech-border">
-          <img src="assets/images/homepage/app-icons/dds.svg" alt="" />
-          <span>[DART DEVELOPMENT SERVICES]</span>
-        </div>
-        <div class="graphql tech-border">
-          <img src="assets/images/homepage/app-icons/bds.svg" alt="" />
-          <span>[BLOC DEVELOPMENT SERIVICE]</span>
-        </div>
-        <div class="graphql tech-border">
-          <img src="assets/images/homepage/app-icons/rds.svg" alt="" />
-          <span>[REST DEVELOPMENT SERVICE]</span>
-        </div>
-      </div>
-
-      <div class="mt-8">
-        <span>iOS</span>
-        <!-- <span class="ps-6">33 Developers</span> -->
-      </div>
-
-      <div
-        class="lg:grid lg:grid-rows-2 lg:grid-cols-4 lg:gap-8 techbox lg:w-full"
-      >
-        <div class="graphql tech-border">
-          <img src="assets/images/homepage/app-icons/coredata.svg" alt="" />
-          <span>[CORE DATA]</span>
-        </div>
-
-        <div class="graphql tech-border">
-          <img src="assets/images/homepage/app-icons/almofire.svg" alt="" />
-          <span>[REST (ALMOFIRE)]</span>
-        </div>
-        <div class="graphql tech-border">
-          <img src="assets/images/homepage/app-icons/uikit.svg" alt="" />
-          <span>[UI KIT]</span>
-        </div>
-        <div class="graphql tech-border">
-          <img src="assets/images/homepage/app-icons/mvvm.svg" alt="" />
-          <span>[MVVM]</span>
-        </div>
-        <div class="graphql tech-border">
-          <img src="assets/images/homepage/app-icons/swift.svg" alt="" />
-          <span>[SWIFT]</span>
-        </div>
-        <div class="graphql tech-border">
-          <img src="assets/images/homepage/app-icons/rx-swift.svg" alt="" />
-          <span>[RX SWIFT]</span>
-        </div>
-        <div class="graphql tech-border">
-          <img src="assets/images/homepage/app-icons/combine.svg" alt="" />
-          <span>[COMBINE]</span>
-        </div>
-      </div>
-
-      <div class="mt-8">
-        <span>Andriod</span>
-        <!-- <span class="ps-6">33 Developers</span> -->
-      </div>
-
-      <div
-        class="lg:grid lg:grid-rows-2 lg:grid-cols-4 lg:gap-8 techbox lg:w-full"
-      >
-        <div class="graphql tech-border">
-          <img src="assets/images/homepage/app-icons/compose.svg" alt="" />
-          <span>[COMPOSE]</span>
-        </div>
-
-        <div class="graphql tech-border">
-          <img src="assets/images/homepage/app-icons/mvvm.svg" alt="" />
-          <span>[MVVM]</span>
-        </div>
-        <div class="graphql tech-border">
-          <img src="assets/images/homepage/app-icons/rx-java.svg" alt="" />
-          <span>[RX JAVA]</span>
-        </div>
-        <div class="graphql tech-border">
-          <img src="assets/images/homepage/app-icons/retro.svg" alt="" />
-          <span>[RETRO FIT]</span>
-        </div>
-        <div class="graphql tech-border">
-          <img src="assets/images/homepage/app-icons/jetpack.svg" alt="" />
-          <span>[JETPACK COMPOSE]</span>
-        </div>
-        <div class="graphql tech-border">
-          <img src="assets/images/homepage/app-icons/kotlin.svg" alt="" />
-          <span>[KOTLIN]</span>
-        </div>
-        <div class="graphql tech-border">
-          <img src="assets/images/homepage/app-icons/java.svg" alt="" />
-          <span>[JAVA]</span>
-        </div>
-      </div>
-
-      <div class="mt-8">
-        <span>Cross Platform</span>
-        <!-- <span class="ps-6">33 Developers</span> -->
-      </div>
-
-      <div
-        class="lg:grid lg:grid-rows-2 lg:grid-cols-4 lg:gap-8 techbox lg:w-full"
-      >
-        <div class="graphql tech-border">
-          <img src="assets/images/homepage/app-icons/ml.svg" alt="" />
-          <span>[ML KIT DEVELOPMENT SERVICES]</span>
-        </div>
-
-        <div class="graphql tech-border">
-          <img src="assets/images/homepage/app-icons/coreml.svg" alt="" />
-          <span>[COREML DEVELOPMENT SERVICES]</span>
-        </div>
-        <div class="graphql tech-border">
-          <img src="assets/images/homepage/app-icons/firebase.svg" alt="" />
-          <span>[FIREBASE DEVELOPMENT SERVICE]</span>
-        </div>
-      </div>
-    </div>
-    <!-- Apps ends -->
-
-    <!-- scope of work ends -->
-
-    <!-- Insights starts -->
-    <div class="insights" id="insights">
-      <div class="insights-heading">
-        Insights<span style="color: var(--secondary-color)">.</span>
-      </div>
-      <div class="insights-topics">
-        <button>Education</button>
-        <button>Fintech</button>
-        <button>Transportation</button>
-        <button>Health Care</button>
-        <button>Whitepapers</button>
-      </div>
-
-      <div class="grid lg:grid-rows-1 grid-flow-col gap-10 mt-4 lg:mt-8">
-        <div class="grid lg:grid-cols-4 lg:gap-4 gap-8">
-          <div class="card">
-            <div class="overflow-hidden">
-              <img src="assets/images/homepage/insights.png" alt="" />
-            </div>
-            <div class="lg:px-7 lg:py-6 p-[0.7rem]">
-              <p class="date">August 5, 2023</p>
-              <p class="mt-2 card-desc">
-                Navigating the Digital Frontier: How Our IT Company Empowers
-                Businesses for the Future
-              </p>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="overflow-hidden">
-              <img src="assets/images/homepage/blog2.png" alt="" />
-            </div>
-            <div class="lg:px-7 lg:py-6 p-[0.7rem]">
-              <p class="date">August 5, 2023</p>
-              <p class="mt-2 card-desc">
-                Navigating the Digital Frontier: How Our IT Company Empowers
-                Businesses for the Future
-              </p>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="overflow-hidden">
-              <img src="assets/images/homepage/blog3.png" alt="" />
-            </div>
-            <div class="lg:px-7 lg:py-6 p-[0.7rem]">
-              <p class="date">August 5, 2023</p>
-              <p class="mt-2 card-desc">
-                Navigating the Digital Frontier: How Our IT Company Empowers
-                Businesses for the Future
-              </p>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="overflow-hidden">
-              <img src="assets/images/homepage/insights.png" alt="" />
-            </div>
-            <div class="lg:px-7 lg:py-6 p-[0.7rem]">
-              <p class="date">August 5, 2023</p>
-              <p class="mt-2 card-desc">
-                Navigating the Digital Frontier: How Our IT Company Empowers
-                Businesses for the Future
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- clients section starts -->
-      <div class="clients-mobile mt-8">
-        <div>
-          <img src="assets/images/clients/bharat-jodo.svg" alt="" />
-          <img src="assets/images/clients/Axis-direct.svg" alt="" />
-          <img src="assets/images/clients/aggust-silver-moon.svg" alt="" />
-          <img src="assets/images/clients/CG-gov.svg" alt="" />
-          <img src="assets/images/clients/gseava.svg" alt="" />
-          <img src="assets/images/clients/pokersaint.svg" alt="" />
-          <img src="assets/images/clients/tescon-green.svg" alt="" />
-          <img src="assets/images/clients/theschon.svg" alt="" />
-          <img src="assets/images/clients/tvs.svg" alt="" />
-        </div>
-      </div>
-    </div>
-    <!-- Insights ends -->
 
     <!-- clients section starts -->
-    <div class="clients">
+    <div class="clients-mobile mt-8">
       <div>
         <img src="assets/images/clients/bharat-jodo.svg" alt="" />
         <img src="assets/images/clients/Axis-direct.svg" alt="" />
@@ -983,120 +798,128 @@
         <img src="assets/images/clients/tvs.svg" alt="" />
       </div>
     </div>
+  </div>
+  <!-- Insights ends -->
 
-    <!-- clients section ends -->
+  <!-- clients section starts -->
+  <div class="clients">
+    <div>
+      <img src="assets/images/clients/bharat-jodo.svg" alt="" />
+      <img src="assets/images/clients/Axis-direct.svg" alt="" />
+      <img src="assets/images/clients/aggust-silver-moon.svg" alt="" />
+      <img src="assets/images/clients/CG-gov.svg" alt="" />
+      <img src="assets/images/clients/gseava.svg" alt="" />
+      <img src="assets/images/clients/pokersaint.svg" alt="" />
+      <img src="assets/images/clients/tescon-green.svg" alt="" />
+      <img src="assets/images/clients/theschon.svg" alt="" />
+      <img src="assets/images/clients/tvs.svg" alt="" />
+    </div>
+  </div>
 
-    <!-- footer starts -->
-    <footer
-      class="lg:grid lg:grid-cols-4 lg:gap-24 lg:pt-16 lg:ps-24 ps-4 py-4"
-    >
-      <div class="mt-8 lg:mt-0">
-        <p>Industries</p>
-        <p class="mt-1 lg:mt-4">Consumer Goods and Distribution</p>
-        <p>Communications, Media, and Information Services</p>
-        <p>Education</p>
-        <p>Energy, Resources, and Utilities</p>
-        <p>Healthcare</p>
-        <p>High Tech</p>
-        <p>Insurance</p>
-        <p>Life Sciences</p>
-        <p>Manufacturing</p>
-        <p>Public Services</p>
-        <p>Retail</p>
-        <p>Travel and Logistics</p>
-      </div>
-      <div class="mt-8 lg:mt-0">
-        <p>Services</p>
-        <p class="mt-1 lg:mt-4">Cloud</p>
-        <p>Cognitive Business Operations</p>
-        <p>Consulting</p>
-        <p>Cybersecurity</p>
-        <p>Data and Analytics</p>
-        <p>Enterprise Solutions</p>
-        <p>IoT and Digital Engineering</p>
-        <p>Sustainability Services</p>
-      </div>
+  <!-- clients section ends -->
 
-      <div class="lg:grid-rows-2 mt-8 lg:mt-0 hidden lg:grid">
-        <div>
-          <p>Quick Links</p>
-          <p class="mt-1 lg:mt-4"><a href="#">Home</a></p>
-          <p><a href="#">About Us</a></p>
-          <p><a href="#">Our Projects</a></p>
-          <p><a href="#">Disclaimer</a></p>
-          <p><a href="#">Privacy Policy</a></p>
-        </div>
+  <!-- footer starts -->
+  <footer class="lg:grid lg:grid-cols-4 lg:gap-24 lg:pt-16 lg:ps-24 ps-4 py-4">
+    <div class="mt-8 lg:mt-0">
+      <p>Industries</p>
+      <p class="mt-1 lg:mt-4">Consumer Goods and Distribution</p>
+      <p>Communications, Media, and Information Services</p>
+      <p>Education</p>
+      <p>Energy, Resources, and Utilities</p>
+      <p>Healthcare</p>
+      <p>High Tech</p>
+      <p>Insurance</p>
+      <p>Life Sciences</p>
+      <p>Manufacturing</p>
+      <p>Public Services</p>
+      <p>Retail</p>
+      <p>Travel and Logistics</p>
+    </div>
+    <div class="mt-8 lg:mt-0">
+      <p>Services</p>
+      <p class="mt-1 lg:mt-4">Cloud</p>
+      <p>Cognitive Business Operations</p>
+      <p>Consulting</p>
+      <p>Cybersecurity</p>
+      <p>Data and Analytics</p>
+      <p>Enterprise Solutions</p>
+      <p>IoT and Digital Engineering</p>
+      <p>Sustainability Services</p>
+    </div>
 
-        <div>
-          <p>Follow us on:</p>
-          <p class="mt-1 lg:mt-4"><a href="#">Instagram</a></p>
-          <p><a href="#">Facebook</a></p>
-          <p><a href="#">Twitter</a></p>
-          <p><a href="#">Linkedin</a></p>
-        </div>
-      </div>
-
-      <div class="grid grid-cols-2 mt-8 lg:mt-0 lg:hidden">
-        <div>
-          <p>Quick Links</p>
-          <p class="mt-1 lg:mt-4"><a href="#">Home</a></p>
-          <p><a href="#">About Us</a></p>
-          <p><a href="#">Our Projects</a></p>
-          <p><a href="#">Disclaimer</a></p>
-          <p><a href="#">Privacy Policy</a></p>
-        </div>
-
-        <div>
-          <p>Follow us on:</p>
-          <p class="mt-1 lg:mt-4"><a href="#">Instagram</a></p>
-          <p><a href="#">Facebook</a></p>
-          <p><a href="#">Twitter</a></p>
-          <p><a href="#">Linkedin</a></p>
-        </div>
-      </div>
-
-      <div class="mt-8 lg:mt-0">
-        <p>Insights</p>
-        <p class="mt-1 lg:mt-4">Customer Stories</p>
-        <p>Cloud</p>
-        <p>Blockchain</p>
-        <p>IoT</p>
-        <p>Metaverse</p>
-        <p>Future of Work</p>
-        <p>Health and Wellness</p>
-        <p>Sustainability</p>
-        <p>AI and ML</p>
-        <p>Cybersecurity</p>
-        <p>Perspectives</p>
-      </div>
-    </footer>
-
-    <footer class="lg:grid lg:grid-cols-3 lg:gap-24 lg:ps-24 lg:my-8 px-4 pb-4">
-      <div class="hidden lg:block">
-        <img src="assets/images/logo/logo.png" alt="" width="275" />
-      </div>
-      <div class="mt-4 lg:mt-0">
-        <span class="address"
-          ><span style="color: var(--secondary-color); font-weight: 700"
-            >Head Office :</span
-          >
-          #268/1, 2nd Floor,Matheshwari Building, Begaur Main
-          Road,Bommanahalli-560068</span
-        >
-      </div>
+    <div class="lg:grid-rows-2 mt-8 lg:mt-0 hidden lg:grid">
       <div>
-        <span class="address"
-          ><span style="color: var(--secondary-color); font-weight: 700"
-            >Raipur Office :</span
-          >
-          Block B-312, Babylon Tower Jivan Vihar, Raipur, Chhattisgarh
-          492001</span
-        >
+        <p>Quick Links</p>
+        <p class="mt-1 lg:mt-4"><a href="#">Home</a></p>
+        <p><a href="#">About Us</a></p>
+        <p><a href="#">Our Projects</a></p>
+        <p><a href="#">Disclaimer</a></p>
+        <p><a href="#">Privacy Policy</a></p>
       </div>
-    </footer>
-    <!-- footer ends -->
 
-    <script src="js/menu.js"></script>
-    <script src="js/homepage.js"></script>
-  </body>
+      <div>
+        <p>Follow us on:</p>
+        <p class="mt-1 lg:mt-4"><a href="#">Instagram</a></p>
+        <p><a href="#">Facebook</a></p>
+        <p><a href="#">Twitter</a></p>
+        <p><a href="#">Linkedin</a></p>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-2 mt-8 lg:mt-0 lg:hidden">
+      <div>
+        <p>Quick Links</p>
+        <p class="mt-1 lg:mt-4"><a href="#">Home</a></p>
+        <p><a href="#">About Us</a></p>
+        <p><a href="#">Our Projects</a></p>
+        <p><a href="#">Disclaimer</a></p>
+        <p><a href="#">Privacy Policy</a></p>
+      </div>
+
+      <div>
+        <p>Follow us on:</p>
+        <p class="mt-1 lg:mt-4"><a href="#">Instagram</a></p>
+        <p><a href="#">Facebook</a></p>
+        <p><a href="#">Twitter</a></p>
+        <p><a href="#">Linkedin</a></p>
+      </div>
+    </div>
+
+    <div class="mt-8 lg:mt-0">
+      <p>Insights</p>
+      <p class="mt-1 lg:mt-4">Customer Stories</p>
+      <p>Cloud</p>
+      <p>Blockchain</p>
+      <p>IoT</p>
+      <p>Metaverse</p>
+      <p>Future of Work</p>
+      <p>Health and Wellness</p>
+      <p>Sustainability</p>
+      <p>AI and ML</p>
+      <p>Cybersecurity</p>
+      <p>Perspectives</p>
+    </div>
+  </footer>
+
+  <footer class="lg:grid lg:grid-cols-3 lg:gap-24 lg:ps-24 lg:my-8 px-4 pb-4">
+    <div class="hidden lg:block">
+      <img src="assets/images/logo/logo.png" alt="" width="275" />
+    </div>
+    <div class="mt-4 lg:mt-0">
+      <span class="address"><span style="color: var(--secondary-color); font-weight: 700">Head Office :</span>
+        #268/1, 2nd Floor,Matheshwari Building, Begaur Main
+        Road,Bommanahalli-560068</span>
+    </div>
+    <div>
+      <span class="address"><span style="color: var(--secondary-color); font-weight: 700">Raipur Office :</span>
+        Block B-312, Babylon Tower Jivan Vihar, Raipur, Chhattisgarh
+        492001</span>
+    </div>
+  </footer>
+  <!-- footer ends -->
+
+  <script src="js/menu.js"></script>
+  <script src="js/homepage.js"></script>
+</body>
+
 </html>
